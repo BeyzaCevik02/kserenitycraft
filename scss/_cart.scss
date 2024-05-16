@@ -1,0 +1,101 @@
+@use 'base' as *;
+
+.shopping-cart {
+  margin-top: 130px;
+  padding: 20px;
+  h1{
+    font-family: $font-bodoni;
+    text-align: center;
+    color: $secondary-color;
+  }
+  h2{
+    font-family: $font-bodoni;
+    color: $secondary-color;
+  }
+
+  p {
+    font-family: $font-mulish;
+  }
+
+  .shopping-body {
+    display: flex;
+
+    .shopping-cart-item {
+      border: 1px solid #ccc;
+      background-color: $tertiary-color;
+      padding: 10px;
+      margin-bottom: 15px;
+      width: 70%;
+
+      .shopping-product-details {
+        display: flex;
+
+        .shopping-product-image {
+          width: 100px;
+          /* Adjust as needed */
+          height: auto;
+          margin-right: 15px;
+        }
+
+        .shopping-info {
+          flex: 1;
+
+          .shopping-product-title {
+            /* Styles for the product title */
+          }
+
+          .shopping-product-description {
+            /* Styles for the product description */
+          }
+
+          .shopping-quantity {
+            /* Styles for the quantity input */
+          }
+
+          .shopping-subtotal {
+            /* Styles for the subtotal */
+          }
+
+          .shopping-remove-button {
+            /* Styles for the remove button */
+          }
+        }
+      }
+    }
+
+    .cart-summary {
+      width: 30%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: $primary-color;
+      .summary-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        
+        .summary-value {
+          text-align: left;
+        }
+        .separator {
+          border-top: 1px solid #3b3b3b; /* Adjust styles as needed */
+        }
+        .summary-bold{
+          font-size: 700;
+        }
+        div{
+          font-family: $font-mulish;
+
+        }
+      }
+
+      .checkout-button {
+        /* Styles for the checkout button */
+      }
+    }
+
+    .empty-cart-message {
+      /* Styles for the empty cart message */
+    }
+  }
+
+}
