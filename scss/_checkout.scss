@@ -1,0 +1,118 @@
+@use 'base' as *;
+.checkout-body{
+  background-color: $tertiary-color;
+}
+.checkout-container {
+  max-width: 600px;
+  margin: 3em auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  h1 {
+    font-family: $font-mulish;
+    color: $secondary-color;
+    text-align: center;
+
+  }
+
+  .address-section {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+
+    h3 {
+      font-family: $font-mulish;
+
+      margin-bottom: 10px;
+    }
+
+    .shipping-form {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      column-gap: 15px;
+
+      input {
+        padding: 10px 20px 10px 10px;
+        width: calc(50% - 60px);
+        margin-bottom: 10px;
+        border: 2px solid #ccc;
+        transition: border-color 0.3s;
+        border-radius: 5px;
+
+        &:focus {
+          border-color: $secondary-color;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .billing-form {
+    display: none;
+    /* Additional styling for billing form fields */
+  }
+
+  .checkout-order-summary {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    .checkout-product-item {
+      display: flex;
+      margin-bottom: 15px;
+      width: 60%;
+      img {
+        width: 80px;
+        /* Adjust image size as needed */
+        height: auto;
+        margin-right: 30px;
+      }
+
+      .checkout-product-details {
+        display: flex;
+        flex-direction: column;
+
+        .checkout-brand-name {
+          font-weight: bold;
+        }
+
+        .checkout-detail-quantity {
+          color: #888;
+        }
+      }
+    }
+    .total-section {
+      margin-top: 20px;
+      flex: 1; 
+      padding-left: 20px; 
+      border-left: 1px solid #ccc;
+      width: 40%;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      .total-summary-label {
+        text-align: left;
+        margin: 5px 0;
+      }
+      .total-summary-value{
+        text-align: right;
+      }
+    }
+  }
+  #confirmButton {
+    background-color: #000;
+    color: $tertiary-color;
+    @include button-border(false);
+    margin-top: 20px;
+    width: 100%;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}

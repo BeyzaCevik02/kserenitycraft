@@ -1,12 +1,23 @@
 {
   "name": "kserenitycraft",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "sass --watch scss/main.scss:css/main.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeyzaCevikPXL/kserenitycraft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BeyzaCevikPXL/kserenitycraft/issues"
+  },
+  "homepage": "https://github.com/BeyzaCevikPXL/kserenitycraft#readme",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.77.1"
+  }
 }
