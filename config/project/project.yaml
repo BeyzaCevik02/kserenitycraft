@@ -1,4 +1,4 @@
-dateModified: 1715953457
+dateModified: 1715985693
 email:
   fromEmail: beyza.cevik@student.pxl.be
   fromName: kserenity-skincare
@@ -6,9 +6,22 @@ email:
 meta:
   __names__:
     7efebcfe-cbe8-4d2a-a4c0-c75c069d028e: kserenity-skincare # kserenity-skincare
+    24af3fe7-3a72-4ddf-95cf-4481152bbca4: Review # Review
+    32ec3ad3-e3ec-488b-9670-185dcae1a236: Header # Header
+    48f60c35-6b15-498e-85e5-ea8d92527c3c: Startpagina # Startpagina
+    87afe98a-c5a0-4ac8-a3b6-6bd2c48da0c5: Startpagina # Startpagina
+    5548eee2-fe00-4fee-bd86-6296f8f13aa5: Header # Header
+    9971f49b-6318-4be1-af82-ffccc357c3e5: Footer # Footer
+    503551c3-729b-4630-a072-c1121d331485: Naam # Naam
     30863589-1efd-4876-8616-a9940a064ced: kserenity-skincare # kserenity-skincare
+    a2a38407-09ac-4efb-8029-5a2effc4b312: 'Footer Content' # Footer Content
+    a6fcea98-619b-48a3-a423-6091162e0b38: Beschrijving # Beschrijving
+    af083550-14b3-4f68-b5f9-cf8385bc1def: 'Header Content' # Header Content
     b3d2304b-f423-490c-a5c9-719f9bfcc2e8: Merk # Merk
     bd7679e2-c961-4bd5-96d2-af9151648497: ProductCard # ProductCard
+    d175920a-2bd8-4fe4-8ddd-19635c38a533: Voorraad # Voorraad
+    ee419d88-11a8-4bdd-ad75-63badd6cf7c0: Prijs # Prijs
+    f8145be8-29f8-43ae-b178-99d5f61d0b6c: Footer # Footer
 system:
   edition: solo
   live: true

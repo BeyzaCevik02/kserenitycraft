@@ -6,17 +6,10 @@
   <title>K-Serenity Skincare</title>
   <script src="https://kit.fontawesome.com/7a5bc158b3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/main.css">
-
 </head>
 <body>
   <div class="navbar" id="navbarjs">
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="producten.html">Producten</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="cart.html">Cart</a></li>
-
-    </ul>
+        {% include '_snippets/_nav.twig' %}
   </div>
   <div class="background">
     <div class="logo">
@@ -80,7 +73,7 @@
     </div>
   </div> 
   <footer>
-    <p> @K-Serenity Skincare</p>
+        {% include '_snippets/_footer.twig' %}
   </footer>
   <script src="/script.js"></script>
 </body>

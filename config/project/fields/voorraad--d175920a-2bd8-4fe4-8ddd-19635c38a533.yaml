@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: voorraad
+instructions: 'Hierin geef je of het product op voorraad is of niet'
+name: Voorraad
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: true
+  placeholder: Voorraad
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

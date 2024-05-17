@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: beschrijving
+instructions: 'Geef hierin de beschrijving van het product'
+name: Beschrijving
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 250
+  code: false
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

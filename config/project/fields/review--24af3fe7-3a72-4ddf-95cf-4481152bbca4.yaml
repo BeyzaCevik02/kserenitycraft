@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: review
+instructions: 'Aantal sterren review ingeven van het product'
+name: Review
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: true
+  placeholder: Review
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

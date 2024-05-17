@@ -1,5 +1,38 @@
-/.env
-/.idea
-/vendor
+# Craft CMS general ignores
+/vendor/
+/storage/
+/web/cpresources/
+/config/license.key
+.env
+.env.*
+.idea/
+*.iml
+
+# Composer specific
+composer.lock
+
+# Node specific
+node_modules/
+/npm-debug.log
+/yarn-error.log
+yarn.lock
+
+# Log files
+*.log
+
+# OS generated files
 .DS_Store
-/node_modules
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE specific
+.vscode/
+nbproject/
+*.sublime-workspace
+*.sublime-project
+
+# Other specific files and directories to ignore
+/site/assets/
+/site/cache/
+/site/uploads/

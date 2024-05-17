@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Producten | K-Serenity Skincare</title>
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		<div class="navbarpro" id="navbarjs">
+			{% include '_snippets/_nav.twig' %}
+		</div>
+		<div class="logo">
+			<img src="/assets/SVG/SVG/Logo-zwart.svg" alt="logo">
+		</div>
+		<div class="form">
+			<div class="form__title">
+				<h1>Neem contact met ons op</h1>
+				<p>Heeft u een vraag, opmerking of suggestie? We zouden graag van je horen. Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met u op.</p>
+			</div>
+			<form class="contact-form">
+				<label for="name">Naam:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="onderwerp">Onderwerp:</label>
+				<input type="text" id="onderwerp" name="onderwerp" required>
+
+				<label for="message">Bericht:</label>
+				<textarea id="message" name="message" rows="5" required></textarea>
+
+				<button type="submit">Verzend</button>
+			</form>
+		</div>
+		<footer>
+			{% include '_snippets/_footer.twig' %}
+
+		</footer>
+
+	</body>
+</html>

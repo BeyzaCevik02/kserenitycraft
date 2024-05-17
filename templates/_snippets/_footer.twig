@@ -1,0 +1,6 @@
+{% set footerEntry = craft.entries.section('footer').one() %}
+{% if footerEntry %}
+        {{ footerEntry.footerContent | raw }}
+{% else %}
+    <p>Footer content not found.</p>
+{% endif %}

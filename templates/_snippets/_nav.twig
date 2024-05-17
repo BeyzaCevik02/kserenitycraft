@@ -1,0 +1,6 @@
+{% set headerEntry = craft.entries.section('header').one() %}
+{% if headerEntry %}
+        {{ headerEntry.headerContent | raw }}
+{% else %}
+    <p>Header content not found.</p>
+{% endif %}

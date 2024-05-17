@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 87afe98a-c5a0-4ac8-a3b6-6bd2c48da0c5 # Startpagina
+handle: startpagina
+maxAuthors: 1
+name: Startpagina
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  30863589-1efd-4876-8616-a9940a064ced: # kserenity-skincare
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
+type: single

@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: naam
+instructions: 'Hierin geef je de naam van het product'
+name: Naam
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: true
+  placeholder: 'Product naam'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -44,10 +44,10 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 1.25em;
   font-weight: lighter;
-  color: #a24e4e !important;
+  color: #a24e4e;
 }
 .navbarpro a:hover {
-  color: #422323 !important;
+  color: #422323;
 }
 .navbarpro .active {
   font-weight: bolder;
@@ -474,6 +474,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+  text-align: center;
   margin-top: 130px;
   padding: 20px;
   background-color: #e4d6d6;
@@ -484,58 +485,6 @@ footer {
 }
 .form p {
   font-family: "Mulish", sans-serif;
-}
-
-.form__title {
-  text-align: center;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 600px;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.contact-form button {
-  width: 50%;
-  padding: 15px;
-  border: 1px solid white;
-  color: #a24e4e;
-  border: none;
-  border-radius: 4px;
-  font-size: 18px;
-  font-family: "Mulish", sans-serif;
-  cursor: pointer;
-}
-.contact-form button:hover {
-  background-color: #a24e4e;
-}
-
-@media (max-width: 600px) {
-  .container {
-    padding: 15px;
-  }
-  .contact-form button {
-    padding: 12px;
-    font-size: 16px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
