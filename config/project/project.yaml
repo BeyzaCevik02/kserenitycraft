@@ -1,4 +1,4 @@
-dateModified: 1715884501
+dateModified: 1715953457
 email:
   fromEmail: beyza.cevik@student.pxl.be
   fromName: kserenity-skincare
@@ -7,6 +7,8 @@ meta:
   __names__:
     7efebcfe-cbe8-4d2a-a4c0-c75c069d028e: kserenity-skincare # kserenity-skincare
     30863589-1efd-4876-8616-a9940a064ced: kserenity-skincare # kserenity-skincare
+    b3d2304b-f423-490c-a5c9-719f9bfcc2e8: Merk # Merk
+    bd7679e2-c961-4bd5-96d2-af9151648497: ProductCard # ProductCard
 system:
   edition: solo
   live: true

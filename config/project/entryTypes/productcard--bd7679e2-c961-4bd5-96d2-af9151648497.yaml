@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  abe8d044-e587-4757-88b9-ea7979a6d522:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 43b26182-c34e-4623-b177-7e32d0e6dee9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b3d2304b-f423-490c-a5c9-719f9bfcc2e8 # Merk
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ec5ae98-cd2e-4aa9-8d05-a71889120c48
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fe619ec6-44c3-42c0-87e0-e95ccb0dc974
+        userCondition: null
+handle: productcard
+hasTitleField: true
+icon: ''
+name: ProductCard
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
