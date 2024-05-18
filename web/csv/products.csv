@@ -1,0 +1,21 @@
+id,merk,soort,description,image_path,price
+1,Beauty Of Joseon,Dynasty Cream,"The Beauty Of Joseon Dynasty Cream is a brightening and anti-aging cream made from traditional Korean herbs including orchid extract to hydrate, tighten, and smooth the skin.","/web/assets/DynastyCreamBOJ.jpg",25.99
+2,COSRX,Advanced Snail 96 Mucin Power Essence,"An essence enriched with snail mucin to calm and hydrate the skin.","/web/assets/AdvancedsnailCOSRX.jpg",18.50
+3,Missha,Time Revolution The First Treatment Essence RX,"An essence that helps improve skin texture and brighten the complexion.","/web/assets/misshathefirst.jpg",38.75
+4,IUNIK,Centella Calming Gel Cream,"A soothing gel cream enriched with centella extracts for sensitive skin types.","/web/assets/iunikcetnella.jpg",21.00
+5,Anua,Heartleaf 77% Soothing Toner,"A soothing toner with 77% heartleaf extract to calm and hydrate the skin.","/web/assets/anuaheartleaf.jpg",14.99
+6,Axis-y,Mugwort Pore Clarifying Wash Off Pack,"A face mask based on mugwort to cleanse and refine pores.","/web/assets/axisymugwort.jpg",28.00
+7,Beauty Of Joseon,Radiance Cleansing Balm,"A cleansing balm that helps remove makeup and impurities.","/web/assets/beautyjosradiance.jpg",21.50
+8,COSRX,Acne Pimple Master Patch,"Transparent patches that treat acne and pimples and protect against infections.","/web/assets/AcnePimpleCOSRX.jpg",5.99
+9,Missha,Time Revolution Night Repair Probio Ampoule,"A night ampoule that helps improve skin texture and elasticity.","/web/assets/misshatimerev.jpg",42.00
+10,IUNIK,Rose Galactomyces Essential Toner,"A toner enriched with rose extracts to hydrate and revitalize the skin.","/web/assets/rose.jpg",17.75
+11,Anua,Heartleaf 77% Clear Pad,"The Anua Heartleaf 77% Clear Pad is a toner pad that combines the power of vegan and cruelty-free ingredients with the soothing benefits of Anua's Heartleaf 77% Soothing Toner.","/web/assets/anuaheartleafpad.jpg",9.50
+12,Axis-y,Dark Spot Correcting Glow Serum,"A serum that helps reduce dark spots and restore the skin.","/web/assets/axisydarkspot.jpg",31.99
+13,Beauty Of Joseon,Repair Serum: Ginseng+Snail Mucin,"A repairing serum to combat aging and pigmentation.","/web/assets/beaytyjosrepairserum2.jpg",29.00
+14,COSRX,Low pH Good Morning Gel Cleanser,"A gentle cleansing gel with a low pH value to cleanse the skin without drying it out.","/web/assets/cosrxlowph.jpg",11.00
+15,Missha,Time Revolution Artemisia Treatment Essence,"An essence enriched with mugwort extracts to calm and nourish the skin.","/web/assets/misshatimerevart.jpg",33.50
+16,IUNIK,Propolis Vitamin Synergy Serum,"A serum enriched with propolis and vitamin C for radiant and hydrated skin.","/web/assets/iunikprop.jpg",22.25
+17,Anua,Heartleaf Cream Mask Night Solution,"This hydrating sheet mask is a true skin savior, thanks to the powerful Heartleaf Extract that not only soothes sensitivity but also effortlessly tackles impurities...","/web/assets/anuaheartleafmaskmain.jpg",16.99
+18,Axis-y,Quinoa One Step Balanced Gel Cleanser,"A balanced cleansing gel with quinoa extracts for a cleansed skin without drying it out.","/web/assets/axisyquinoa.jpg",24.50
+19,Beauty Of Joseon,Centella Asiatica Calming Mask,"A repairing sleeping mask that revitalizes and nourishes the skin overnight.","/web/assets/CentellaMask800.jpg",25.99
+20,COSRX,Hydrium Triple Hyaluronic Moisture Ampoule,"An ampoule with triple hyaluronic acid to deeply hydrate and revitalize the skin.","/web/assets/hydriumcentellacosrx2.jpg",24.99

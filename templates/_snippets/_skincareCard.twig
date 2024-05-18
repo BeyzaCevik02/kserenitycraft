@@ -1,1 +1,7 @@
 {# zet hier je card html van je producten, doe daarna set je image; if sneakerimage, geef dan img tag, en dan ending. zie foto  #}
+<div class="product">
+    <h2>{{ product.merk }} - {{ product.soort }}</h2>
+    <p>{{ product.description }}</p>
+    <img src="{{ product.image_path.one().url }}" alt="{{ product.merk }} - {{ product.soort }}">
+    <p>Price: {{ product.price }}</p>
+</div>

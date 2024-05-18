@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: prijs
+handle: price
 instructions: 'Geef hierin de prijs van het product'
-name: Prijs
+name: Price
 searchable: false
 settings:
   currency: EUR

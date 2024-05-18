@@ -1,0 +1,10 @@
+columnSuffix: null
+handle: contactmail
+instructions: 'Je eigen mailadres '
+name: contactMail
+searchable: false
+settings:
+  placeholder: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

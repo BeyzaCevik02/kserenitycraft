@@ -1,15 +1,15 @@
 columnSuffix: null
-handle: naam
-instructions: 'Hierin geef je de naam van het product'
-name: Naam
+handle: homepagebuttontext
+instructions: 'Dit is je button en het tekst in je button'
+name: homepageButtonText
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
   code: false
   initialRows: 4
-  multiline: true
-  placeholder: 'Product naam'
+  multiline: false
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

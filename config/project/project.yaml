@@ -1,27 +1,65 @@
-dateModified: 1715985693
+dateModified: 1716071087
 email:
   fromEmail: beyza.cevik@student.pxl.be
   fromName: kserenity-skincare
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  contactimg:
+    hasUrls: true
+    name: ContactImg
+    settings:
+      path: /assets/svg/svg
+    type: craft\fs\Local
+    url: '@web/assets/svg/svg'
+  sitelogo:
+    hasUrls: true
+    name: SiteLogo
+    settings:
+      path: /assets/SVG
+    type: craft\fs\Local
+    url: '@web/assets/SVG/'
 meta:
   __names__:
+    0e4ebf1a-a242-45fb-9206-cad3057ccbc4: contactTel # contactTel
+    0e72854b-8c3b-4835-8c77-2bad29d28ea8: contactTitleSocials # contactTitleSocials
+    7cb8b0db-c230-471d-bd63-642a532fc6de: ContactImg # ContactImg
+    7dcb02f2-e42e-4938-b65a-c23f9090601b: contactTitleMail # contactTitleMail
     7efebcfe-cbe8-4d2a-a4c0-c75c069d028e: kserenity-skincare # kserenity-skincare
+    7f274b1f-e75a-4482-b11b-fb766655c7f8: contactTitleTel # contactTitleTel
+    9ac71a7d-eac6-4b5a-bb77-2f40d6e5ae95: homepageDescription # homepageDescription
     24af3fe7-3a72-4ddf-95cf-4481152bbca4: Review # Review
     32ec3ad3-e3ec-488b-9670-185dcae1a236: Header # Header
-    48f60c35-6b15-498e-85e5-ea8d92527c3c: Startpagina # Startpagina
-    87afe98a-c5a0-4ac8-a3b6-6bd2c48da0c5: Startpagina # Startpagina
+    48f60c35-6b15-498e-85e5-ea8d92527c3c: Homepage # Homepage
+    49dd7690-de8b-4c4c-acf6-ea0bed781c88: contactMail # contactMail
+    87afe98a-c5a0-4ac8-a3b6-6bd2c48da0c5: 'Homepage Entry' # Homepage Entry
+    685d1f25-9518-4ae0-af58-7792cf56ee2b: homepageButtonText # homepageButtonText
+    723be697-4f69-4566-9a16-46be763d8156: ContactTitle # ContactTitle
     5548eee2-fe00-4fee-bd86-6296f8f13aa5: Header # Header
+    7028ecad-3014-43e2-b223-a872366b97d6: Image # Image
+    7331cb0c-7b5e-488f-9bc0-5b9eab8fb72d: siteLogo # siteLogo
     9971f49b-6318-4be1-af82-ffccc357c3e5: Footer # Footer
-    503551c3-729b-4630-a072-c1121d331485: Naam # Naam
+    29685f3e-1f14-43ff-90f4-cd1b385b8501: SiteLogo # SiteLogo
+    65305b29-a1b4-4736-8ef8-a757decd3de9: ProductEntry # ProductEntry
+    503551c3-729b-4630-a072-c1121d331485: Soort # Soort
     30863589-1efd-4876-8616-a9940a064ced: kserenity-skincare # kserenity-skincare
     a2a38407-09ac-4efb-8029-5a2effc4b312: 'Footer Content' # Footer Content
-    a6fcea98-619b-48a3-a423-6091162e0b38: Beschrijving # Beschrijving
+    a6fcea98-619b-48a3-a423-6091162e0b38: Description # Description
     af083550-14b3-4f68-b5f9-cf8385bc1def: 'Header Content' # Header Content
+    b1cb8570-0af8-49f4-a072-b31cfe735988: homepageTitle # homepageTitle
     b3d2304b-f423-490c-a5c9-719f9bfcc2e8: Merk # Merk
-    bd7679e2-c961-4bd5-96d2-af9151648497: ProductCard # ProductCard
+    b57b1002-f8d0-4634-b367-e7014e73cc8b: Products # Products
+    c1301a7d-dc92-494c-ba91-175a1a8e411f: ContactImg # ContactImg
+    cc336e9f-0b95-477b-8228-f511d15140f2: infoDescription # infoDescription
     d175920a-2bd8-4fe4-8ddd-19635c38a533: Voorraad # Voorraad
-    ee419d88-11a8-4bdd-ad75-63badd6cf7c0: Prijs # Prijs
+    d2930100-335c-47ed-9934-ca2c76e54f16: homepageButtonLink # homepageButtonLink
+    e55d4be9-a010-4072-b605-170ec7dcc2f0: infoTitle # infoTitle
+    ee419d88-11a8-4bdd-ad75-63badd6cf7c0: Price # Price
     f8145be8-29f8-43ae-b178-99d5f61d0b6c: Footer # Footer
+plugins:
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.1.0.0
 system:
   edition: solo
   live: true
