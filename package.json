@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "sass --watch scss/main.scss:css/main.css"
+    "dev": "sass --watch scss/main.scss:web/css/main.css"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +18,6 @@
   "homepage": "https://github.com/BeyzaCevikPXL/kserenitycraft#readme",
   "description": "",
   "dependencies": {
-    "sass": "^1.77.1"
+    "sass": "^1.77.2"
   }
 }

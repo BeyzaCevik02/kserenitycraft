@@ -1,0 +1,27 @@
+fieldLayouts:
+  8beb801c-1841-41d8-8a63-0f7ec9a2d686:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ec962417-3322-4da5-a5ad-df1967228a86 # BlackLogo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a8dbeab-0dda-4cd8-8526-b7621e37d7a1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 42caa8c6-307e-4dac-9877-1277509cb8cc
+        userCondition: null
+handle: blacklogo
+name: blackLogo
+sortOrder: 1

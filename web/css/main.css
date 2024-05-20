@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Mulish:wght@200;400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+}
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+/*#navbarjs.scrolled{
+  background-color: $secondary-color;
+  transition: background-color 0.5s ease;
+  &:hover{
+    color: #fff7f7;
+  }
+}*/
+.navbarpro {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 40px 50px 25px;
+  z-index: 999;
+}
+.navbarpro ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbarpro ul li {
+  display: inline;
+  margin: 50px;
+}
+.navbarpro a {
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.25em;
+  font-weight: lighter;
+  color: #a24e4e !important;
+}
+.navbarpro a:hover {
+  color: #422323 !important;
+}
+.navbarpro .active {
+  font-weight: bolder;
+}
+
+.background-producten {
+  background-color: #fff7f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #e4d6d6;
+  font-family: "Bodoni Moda", serif;
+  color: #a24e4e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.875em;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 0.75em;
+  }
+}
+.background {
+  background-image: url("/assets/aiony-haust-f2ar0ltTvaI-unsplash.png");
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+.background .content {
+  text-align: center;
+}
+.background h1, .background p, .background button {
+  margin: 10px 0;
+  width: 100%;
+  color: #fff7f7;
+}
+.background h1 {
+  font-size: 6.25em;
+  font-family: "Bodoni Moda", serif;
+}
+.background p {
+  font-size: 1.875em;
+  font-family: "Mulish", sans-serif;
+}
+.background button {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.25em;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 1px solid #fff7f7;
+  background-color: transparent;
+  width: auto;
+}
+.background button:hover {
+  background-color: #fff7f7;
+  color: #a24e4e;
+}
+
+.navbar {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 40px 50px 25px;
+  z-index: 999;
+}
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar ul li {
+  display: inline;
+  margin: 50px;
+}
+.navbar a {
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.25em;
+  font-weight: lighter;
+  color: #fff7f7;
+}
+.navbar a:hover {
+  color: #a24e4e;
+}
+.navbar .active {
+  font-weight: bolder;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #e4d6d6;
+  color: #a24e4e;
+  padding: 20px;
+  max-width: 100%;
+}
+.info .title {
+  font-size: 1.875em;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  margin: 0 10% 0;
+}
+.info .uitleg {
+  font-size: 1.25em;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  margin: 0 10% 20px;
+  line-height: 1.5;
+}
+
+.producten {
+  background-color: #fff7f7;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.producten .product-row {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.producten .producten-title {
+  font-size: 1.875em;
+  color: #a24e4e;
+  font-family: "Bodoni Moda", serif;
+  padding: 20px;
+  margin: 0;
+}
+.producten .product-card {
+  width: 30%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  text-align: center;
+}
+.producten .product-card h2 {
+  font-size: 1.25em;
+  margin-bottom: 5px;
+  font-family: "Bodoni Moda", serif;
+}
+.producten .product-card img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+.producten .product-card p {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+.producten .product-card .prijskleur {
+  color: #a24e4e;
+}
+.producten .product-card a {
+  color: #000;
+  display: block;
+}
+
+.contact {
+  background-color: #a24e4e;
+  color: #fff7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 100px;
+  max-width: 100%;
+  margin: auto;
+}
+.contact .title {
+  position: relative;
+  text-align: center;
+}
+.contact .title h2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 175px;
+  font-size: 1.875em;
+  font-family: "Bodoni Moda", serif;
+}
+.contact .title img {
+  width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.contact .gegevens {
+  font-size: 1.25em;
+  text-align: center;
+  margin-right: 300px;
+  line-height: 1.5;
+  font-family: "Mulish", sans-serif;
+  font-weight: lighter;
+}
+.contact .gegevens a {
+  color: #e4d6d6;
+}
+
+.product-content {
+  margin: 125px 0 0 150px;
+}
+
+.product-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 75px 50px 0;
+  overflow: hidden;
+  width: 500px;
+}
+.image-carousel .image {
+  width: 500px;
+  height: 550px;
+  display: none;
+  margin-bottom: 10px;
+}
+.image-carousel .image img {
+  width: 100%;
+  height: auto;
+}
+.image-carousel .image.active {
+  display: block;
+}
+.image-carousel .carousel-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.image-carousel .carousel-arrows span {
+  margin: 0 50px 0;
+  color: black;
+}
+.image-carousel span {
+  cursor: pointer;
+  font-size: 2.5em;
+}
+
+.product-details {
+  max-width: 40%;
+}
+.product-details .brand,
+.product-details .product-name,
+.product-details .review,
+.product-details .availability,
+.product-details .description,
+.product-details .price,
+.product-details .quantity {
+  margin-bottom: 20px;
+  font-family: "Mulish", sans-serif;
+}
+.product-details .brand,
+.product-details .product-name, .product-details .price {
+  font-weight: bold;
+}
+.product-details .brand {
+  font-size: 2.5em;
+}
+.product-details .product-name {
+  font-size: 1.875em;
+}
+.product-details .availability {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 20px;
+  color: #a24e4e;
+  font-weight: bold;
+}
+.product-details .price {
+  font-size: 1.25em;
+  color: #a24e4e;
+}
+.product-details .quantity button {
+  background-color: #e4d6d6;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.25em;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+.product-details .quantity span {
+  padding: 10px;
+}
+.product-details .add-to-cart {
+  background-color: #000;
+  color: #fff7f7;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.25em;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+}
+.product-details .add-to-cart:hover {
+  background-color: #a24e4e;
+}
+
+.producten-titel {
+  text-align: center;
+  margin-top: 130px;
+  padding: 20px;
+  background-color: #e4d6d6;
+  color: #a24e4e;
+}
+.producten-titel h1 {
+  font-family: "Bodoni Moda", serif;
+}
+.producten-titel p {
+  font-family: "Mulish", sans-serif;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Mulish", sans-serif;
+}
+.filter .prijs-filter {
+  margin-left: 10px;
+}
+
+.product-grid {
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.product-grid .product-row {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.product-grid .product-row .product-card {
+  width: 30%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  text-align: center;
+}
+.product-grid .product-row .product-card h2 {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  font-family: "Bodoni Moda", serif;
+}
+.product-grid .product-row .product-card img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+.product-grid .product-row .product-card p {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+.product-grid .product-row .product-card .prijskleur {
+  color: #a24e4e;
+}
+.product-grid .product-row .product-card a {
+  color: #000;
+  display: block;
+}
+@media (max-width: 670px) {
+  .product-grid .product-row .product-card {
+    width: 100%;
+  }
+  .product-grid .product-row .product-card img {
+    max-width: 50%;
+  }
+}
+
+.pagination {
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  padding: 20px 0;
+  background-color: #fff7f7;
+}
+.pagination a {
+  margin: 0 5px;
+  color: #000;
+}
+.pagination a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+  width: auto;
+  padding: 20px;
+  background-color: #e4d6d6;
+  color: #a24e4e;
+  overflow: hidden;
+}
+.form h1 {
+  font-family: "Bodoni Moda", serif;
+}
+.form p {
+  font-family: "Mulish", sans-serif;
+}
+
+.form__title {
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 600px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  width: 50%;
+  padding: 15px;
+  border: 1px solid white;
+  color: #a24e4e;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #a24e4e;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  .contact-form button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

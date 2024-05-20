@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Products | K-Serenity Skincare</title>
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		<div class="navbarpro" id="navbarjs">
+			{% include '_snippets/_nav.twig' %}
+		</div>
+		{% include '_snippets/_logoBlack.twig' %}
+
+		{% set productenPage = craft.entries.section('products').type('productenpage').one() %}
+		{% if productenPage %}
+			<div class="producten-titel">
+				<h1>{{ productenPage.productentitle }}</h1>
+				<p>{{ productenPage.productendescription }}</p>
+			</div>
+		{% endif %}
+		<div
+			class="background-producten">
+			<div class="filter">
+				<div class="filter-col">
+					<label for="merk-filter">Filter op merk:</label>
+					<select id="merk-filter">
+						<option value="merk1">Merk 1</option>
+						<option value="merk2">Merk 2</option>
+					</select>
+					<label for="prijs-filter" class="prijs-filter">Filter op prijs:</label>
+					<input type="range" id="prijs-filter" min="0" max="1000">
+				</div>
+			</div>
+			{% set query = craft.entries()
+            .section('products')
+            .type('productentry')
+            .orderBy('postDate desc') %}
+
+			{% paginate query.limit(6) as pageInfo, products %}
+
+				<div class="product-grid">
+					<div class="product-row">
+						{% for product in products %}
+							{% include '_snippets/_skincareCard.twig' with { product: product } %}
+						{% endfor %}
+					</div>
+				</div>
+
+				<div class="pagination">
+					{% if pageInfo.getPrevUrl() %}
+						<a href="{{ pageInfo.getPrevUrl() }}">&laquo; Vorige</a>
+					{% endif %}
+					{% for page, url in pageInfo.getPrevUrls(2) %}
+						<a href="{{ url }}">{{ page }}</a>
+					{% endfor %}
+					<span>{{ pageInfo.currentPage }}</span>
+					{% for page, url in pageInfo.getNextUrls(2) %}
+						<a href="{{ url }}">{{ page }}</a>
+					{% endfor %}
+					{% if pageInfo.getNextUrl() %}
+						<a href="{{ pageInfo.getNextUrl() }}">Volgende &raquo;</a>
+					{% endif %}
+				</div>
+			</div>
+			<footer>
+				{% include '_snippets/_footer.twig' %}
+			</footer>
+		</body>
+	</body>
+</html>

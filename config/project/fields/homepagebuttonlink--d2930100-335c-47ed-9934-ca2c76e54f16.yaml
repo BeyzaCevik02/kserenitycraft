@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: homepagebuttonlink
+instructions: 'dit is de link van je button, verwijzing naar /producten'
+name: homepageButtonLink
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

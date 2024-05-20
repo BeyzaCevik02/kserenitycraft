@@ -1,0 +1,64 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  c27ffe14-97d1-4023-818d-30f5a0839f20:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: e4e78bdc-26be-4455-865c-72d3d8fee37d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ec962417-3322-4da5-a5ad-df1967228a86 # BlackLogo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8c41e6b-23b4-4c8b-a84d-5d8b7e2c524f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b0de577d-c5f4-4efc-a4bd-ab25379a0258
+        userCondition: null
+fs: blacklogo
+handle: blacklogo
+name: blackLogo
+sortOrder: 4
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: blacklogo
+transformSubpath: ''

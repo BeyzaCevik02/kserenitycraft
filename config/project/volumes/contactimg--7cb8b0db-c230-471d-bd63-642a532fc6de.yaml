@@ -1,0 +1,64 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  cb4522ff-825f-4952-b9c6-ca4988984bec:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c1301a7d-dc92-494c-ba91-175a1a8e411f # ContactImg
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ac5581a-2c64-4310-aff5-39882d301b38
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 0a3e10b7-a7e5-40f9-8525-db79048afe9f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8a1b3aa1-7ab9-48e2-9ad1-c361056f5546
+        userCondition: null
+fs: contactimg
+handle: contactimg
+name: ContactImg
+sortOrder: 2
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: contactimg
+transformSubpath: ''

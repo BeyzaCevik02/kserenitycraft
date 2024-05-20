@@ -1,0 +1,12 @@
+{# zet hier je card html van je producten, doe daarna set je image; if sneakerimage, geef dan img tag, en dan ending. zie foto  #}
+{% set price = product.price %}
+{% set amount = price.getAmount() %}
+{% set currency = price.getCurrency() %}
+<div class="product-card">
+	<a href="{{ product.url }}">
+		<img src="{{ product.image.one().url }}" alt="{{ product.merk }} - {{ product.soort }}">
+		<h2>{{ product.merk }}</h2>
+		<p>{{ product.soort }}</p>
+		<p class="prijskleur">{{ amount/100 }} {{ currency }}</p>
+	</a>
+</div>

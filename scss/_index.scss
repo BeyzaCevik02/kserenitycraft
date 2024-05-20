@@ -65,39 +65,49 @@
     background-color: $tertiary-color;
     padding-bottom: 50px;
     text-align: center;
-    h2 {
+    .product-row{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        @include flex-center; 
+        flex-wrap: wrap; 
+        margin-bottom: 20px;   
+    }
+    .producten-title {
         font-size: $font-md-size;
         color: $secondary-color;
         font-family: $font-bodoni;
         padding: 20px;
         margin: 0;
     }
-    .product {
-        display: inline-block; 
-        width: 30%; 
-        background-size: cover;
-        @include imagetext;
-        padding: 10px;
-        h2, p {
-            font-size: $font-sm-size;
-            color: $tertiary-color;
-            text-align: center;
-        }
-        h2{
-            @include position-absolute(200px);
-            font-family: $font-bodoni;
-        }
-        p{
-            @include position-absolute(null, 190px);
-            font-family: $font-mulish;
-            font-weight: lighter;
+    .product-card {
+        width: 30%;
+        box-sizing: border-box;
+        margin: 10px 0;
+        text-align: center;
+        h2 {
+          font-size: $font-sm-size;
+          margin-bottom: 5px;
+          font-family: $font-bodoni;
         }
         img {
-            width: 85%;
-            height: auto; 
+          max-width: 70%;
+          height: auto;
+          display: block;
+          margin-bottom: 10px;
+          margin: 0 auto;
+
         }
-        @media (max-width: 670px) {
-            width: 50%;
+        p {
+          font-family: $font-mulish;
+          margin: 0;
+        }
+        .prijskleur{
+          color: $secondary-color;
+        }
+        a{
+          color: #000;
+          display: block;
         }
     }
 }

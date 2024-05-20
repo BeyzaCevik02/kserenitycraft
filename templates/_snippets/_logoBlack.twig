@@ -1,0 +1,7 @@
+<div class="logo">
+{% set siteSettings = craft.app.globals.getSetByHandle('blackLogo') %}
+    {% set logo = siteSettings.blacklogo.one() %}
+    {% if logo %}
+        <img src="{{ logo.url }}" alt="logo">
+    {% endif %}
+</div>

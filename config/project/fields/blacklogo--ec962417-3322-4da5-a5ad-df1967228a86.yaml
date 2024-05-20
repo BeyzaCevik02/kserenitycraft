@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: blacklogo
+instructions: 'Dit is je zwarte logo voor lichtere achtergronden'
+name: BlackLogo
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:9a77c145-c53b-44a4-bdb2-2dc307052d32' # blackLogo
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:29685f3e-1f14-43ff-90f4-cd1b385b8501' # SiteLogo
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:9a77c145-c53b-44a4-bdb2-2dc307052d32' # blackLogo
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

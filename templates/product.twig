@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Product | K-Serenity Skincare</title>
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		<div class="navbarpro" id="navbarjs">
+			{% include '_snippets/_nav.twig' %}
+		</div>
+		<div class="background-producten">
+			{% include '_snippets/_logoBlack.twig' %}
+
+			<div class="product-content">
+				<div class="product-page">
+					<div class="image-carousel">
+						{% for image in entry.image.all() %}
+							<div class="image{% if loop.first %} active{% endif %}" data-index="{{ loop.index0 }}">
+								<img src="{{ image.url }}" alt="{{ image.title }}">
+							</div>
+						{% endfor %}
+						<div class="carousel-arrows">
+							<span onclick="prevImage()">←</span>
+							<span onclick="nextImage()">→</span>
+						</div>
+					</div>
+					{% set price = entry.price %}
+					{% set amount = price.getAmount() %}
+					{% set currency = price.getCurrency() %}
+
+					<div class="product-details">
+						<div class="brand">{{ entry.merk }}</div>
+						<div class="product-name">{{ entry.soort }}</div>
+						<div class="availability">
+							{% if entry.voorraad > 0 %}
+								In Stock
+							{% else %}
+								SOLD OUT
+							{% endif %}
+						</div>
+						<div class="description">
+							{{ entry.description }}
+						</div>
+						<div class="price">{{ amount / 100 }}
+							{{ currency }}</div>
+						<div class="quantity">
+							<button>-</button>
+							<span>1</span>
+							<button>+</button>
+						</div>
+						<button class="add-to-cart">
+							{% if entry.voorraad > 0 %}
+								Add to Cart
+							{% else %}
+								SOLD OUT
+							{% endif %}
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html></div><footer>
+{% include '_snippets/_footer.twig' %}</footer><script src="/script.js"></script></body></html>

@@ -67,7 +67,7 @@ body{
   }
 }*/
 .navbarpro{
-  @include navbar-link-colors($secondary-color, #422323);
+  @include navbar-link-colors($secondary-color !important, #422323 !important);
 }
 @mixin flex-center($justify: center) {
     display: flex;

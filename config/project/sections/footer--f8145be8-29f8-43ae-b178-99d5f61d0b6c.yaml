@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 9971f49b-6318-4be1-af82-ffccc357c3e5 # Footer
+handle: footer
+maxAuthors: 1
+name: Footer
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  30863589-1efd-4876-8616-a9940a064ced: # kserenity-skincare
+    enabledByDefault: true
+    hasUrls: true
+    template: footer/_entry
+    uriFormat: footer
+type: single
