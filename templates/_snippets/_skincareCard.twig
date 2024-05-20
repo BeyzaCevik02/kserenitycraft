@@ -2,11 +2,11 @@
 {% set price = product.price %}
 {% set amount = price.getAmount() %}
 {% set currency = price.getCurrency() %}
-
-<img src="{{ product.image.one().url }}" alt="{{ product.merk }} - {{ product.soort }}">
-
-<h2>{{ product.merk }}
-	-
-	{{ product.soort }}</h2>
-<p>{{ amount / 100 }}
-	{{ currency }}</p>
+<div class="product-card">
+	<a href="{{ product.url }}">
+		<img src="{{ product.image.one().url }}" alt="{{ product.merk }} - {{ product.soort }}">
+		<h2>{{ product.merk }}</h2>
+		<p>{{ product.soort }}</p>
+		<p class="prijskleur">{{ amount/100 }} {{ currency }}</p>
+	</a>
+</div>

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Producten | K-Serenity Skincare</title>
+		<title>Products | K-Serenity Skincare</title>
 		<link rel="stylesheet" href="/css/main.css">
 	</head>
 	<body>
@@ -19,9 +19,8 @@
 				<p>{{ productenPage.productendescription }}</p>
 			</div>
 		{% endif %}
-		<divphp
+		<div
 			class="background-producten">
-			<!-- Filter sectie -->
 			<div class="filter">
 				<div class="filter-col">
 					<label for="merk-filter">Filter op merk:</label>
@@ -29,33 +28,44 @@
 						<option value="merk1">Merk 1</option>
 						<option value="merk2">Merk 2</option>
 					</select>
-					<!--moet js nog doen-->
 					<label for="prijs-filter" class="prijs-filter">Filter op prijs:</label>
 					<input type="range" id="prijs-filter" min="0" max="1000">
 				</div>
 			</div>
-			{% set products = craft.entries.section('products').type('productentry').all() %}
+			{% set query = craft.entries()
+            .section('products')
+            .type('productentry')
+            .orderBy('postDate desc') %}
 
-			<div class="product-grid">
+			{% paginate query.limit(6) as pageInfo, products %}
 
-				<div class="product-row">
-					{% for product in products %}
-						<div class="product-card">
+				<div class="product-grid">
+					<div class="product-row">
+						{% for product in products %}
 							{% include '_snippets/_skincareCard.twig' with { product: product } %}
-						</div>
-					{% endfor %}
+						{% endfor %}
+					</div>
+				</div>
 
+				<div class="pagination">
+					{% if pageInfo.getPrevUrl() %}
+						<a href="{{ pageInfo.getPrevUrl() }}">&laquo; Vorige</a>
+					{% endif %}
+					{% for page, url in pageInfo.getPrevUrls(2) %}
+						<a href="{{ url }}">{{ page }}</a>
+					{% endfor %}
+					<span>{{ pageInfo.currentPage }}</span>
+					{% for page, url in pageInfo.getNextUrls(2) %}
+						<a href="{{ url }}">{{ page }}</a>
+					{% endfor %}
+					{% if pageInfo.getNextUrl() %}
+						<a href="{{ pageInfo.getNextUrl() }}">Volgende &raquo;</a>
+					{% endif %}
 				</div>
 			</div>
-			<div class="pagination">
-				<a href="#">&laquo; Vorige</a>
-				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">Volgende &raquo;</a>
-			</div>
-		</div>
-		<footer>
-			{% include '_snippets/_footer.twig' %}
-		</footer>
+			<footer>
+				{% include '_snippets/_footer.twig' %}
+			</footer>
+		</body>
 	</body>
 </html>

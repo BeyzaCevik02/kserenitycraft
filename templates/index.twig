@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="/css/main.css">
 	</head>
 	<body>
+		{% hook 'after-body-start' %}
+
 		{% set homepage = craft.entries.section('homepage').one() %}
 
 		<div class="navbar" id="navbarjs">
@@ -38,32 +40,14 @@
 				</p>
 			</div>
 		</div>
+		{% set products = craft.entries.section('products').type('productentry').limit(3) %}
 
 		<div class="producten">
-			<h2>{{ homepage.toptitle }}</h2>
-			<div class="product">
-				<a href="product.html">
-					<img src="/assets/SVG/SVG/product1.svg" alt="Product 1">
-					<h2>Relief Sun : Rice + Probiotics
-						<br>SPF50+ PA++++</h2>
-					<p>€17.95</p>
-				</a>
-			</div>
-			<div class="product">
-				<a href="product.html">
-					<img src="/assets/SVG/SVG/product2.svg" alt="Product 1">
-					<h2>Advanced Snail 96
-						<br>Mucin Power Essence</h2>
-					<p>€19.95</p>
-				</a>
-			</div>
-			<div class="product">
-				<a href="product.html">
-					<img src="/assets/SVG/SVG/Layer 1.png" alt="Product 1">
-					<h2>Glow Serum
-						<br>Propolis+Niacinamide</h2>
-					<p>€13.95</p>
-				</a>
+			<h2 class="producten-title">{{ homepage.toptitle }}</h2>
+			<div class="product-row">
+				{% for product in products %}
+					{% include '_snippets/_skincareCard.twig' with { product: product } %}
+				{% endfor %}
 			</div>
 		</div>
 

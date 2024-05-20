@@ -182,49 +182,51 @@ footer {
   padding-bottom: 50px;
   text-align: center;
 }
-.producten h2 {
+.producten .product-row {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.producten .producten-title {
   font-size: 1.875em;
   color: #a24e4e;
   font-family: "Bodoni Moda", serif;
   padding: 20px;
   margin: 0;
 }
-.producten .product {
-  display: inline-block;
+.producten .product-card {
   width: 30%;
-  background-size: cover;
-  position: relative;
+  box-sizing: border-box;
+  margin: 10px 0;
   text-align: center;
-  padding: 10px;
 }
-.producten .product h2, .producten .product p {
+.producten .product-card h2 {
   font-size: 1.25em;
-  color: #fff7f7;
-  text-align: center;
-}
-.producten .product h2 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 200px;
+  margin-bottom: 5px;
   font-family: "Bodoni Moda", serif;
 }
-.producten .product p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 190px;
-  font-family: "Mulish", sans-serif;
-  font-weight: lighter;
-}
-.producten .product img {
-  width: 85%;
+.producten .product-card img {
+  max-width: 70%;
   height: auto;
+  display: block;
+  margin-bottom: 10px;
+  margin: 0 auto;
 }
-@media (max-width: 670px) {
-  .producten .product {
-    width: 50%;
-  }
+.producten .product-card p {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+.producten .product-card .prijskleur {
+  color: #a24e4e;
+}
+.producten .product-card a {
+  color: #000;
+  display: block;
 }
 
 .contact {
@@ -308,7 +310,7 @@ footer {
 }
 .image-carousel .carousel-arrows span {
   margin: 0 50px 0;
-  color: #fff7f7;
+  color: black;
 }
 .image-carousel span {
   cursor: pointer;
@@ -341,6 +343,8 @@ footer {
 .product-details .availability {
   border-bottom: 1px solid #dadada;
   padding-bottom: 20px;
+  color: #a24e4e;
+  font-weight: bold;
 }
 .product-details .price {
   font-size: 1.25em;
@@ -458,7 +462,8 @@ footer {
 .pagination {
   text-align: center;
   font-family: "Mulish", sans-serif;
-  margin: 20px 0;
+  padding: 20px 0;
+  background-color: #fff7f7;
 }
 .pagination a {
   margin: 0 5px;

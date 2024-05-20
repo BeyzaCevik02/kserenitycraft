@@ -1,4 +1,4 @@
-dateModified: 1716215341
+dateModified: 1716227886
 email:
   fromEmail: beyza.cevik@student.pxl.be
   fromName: kserenity-skincare
@@ -39,11 +39,11 @@ meta:
     6beb16d9-e71f-4fb5-826a-c52b6a7a8857: ProductenTitle # ProductenTitle
     7cb8b0db-c230-471d-bd63-642a532fc6de: ContactImg # ContactImg
     7dcb02f2-e42e-4938-b65a-c23f9090601b: contactTitleMail # contactTitleMail
+    7e83d19b-9f19-4664-a036-9ed99d691b97: 'Public Schema' # Public Schema
     7efebcfe-cbe8-4d2a-a4c0-c75c069d028e: kserenity-skincare # kserenity-skincare
     7f274b1f-e75a-4482-b11b-fb766655c7f8: contactTitleTel # contactTitleTel
     9a77c145-c53b-44a4-bdb2-2dc307052d32: blackLogo # blackLogo
     9ac71a7d-eac6-4b5a-bb77-2f40d6e5ae95: homepageDescription # homepageDescription
-    24af3fe7-3a72-4ddf-95cf-4481152bbca4: Review # Review
     32ec3ad3-e3ec-488b-9670-185dcae1a236: Header # Header
     48f60c35-6b15-498e-85e5-ea8d92527c3c: Homepage # Homepage
     49dd7690-de8b-4c4c-acf6-ea0bed781c88: contactMail # contactMail
@@ -84,6 +84,11 @@ meta:
     f8145be8-29f8-43ae-b178-99d5f61d0b6c: Footer # Footer
     f2746321-ef1e-4494-a19b-998823890d27: FormDescription # FormDescription
 plugins:
+  cookie-consent:
+    edition: standard
+    enabled: true
+    licenseKey: OONYD9QY0DN5M85BSTUXPO2U
+    schemaVersion: 1.5.0
   dumper:
     edition: standard
     enabled: true

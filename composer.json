@@ -4,6 +4,7 @@
   "require": {
     "craftcms/cms": "^5.0.0",
     "craftcms/feed-me": "^6.0",
+    "elleracompany/craft-cookie-consent": "5.0.1",
     "studioespresso/craft-dumper": "^5.0",
     "studioespresso/craft-navigate": "^5.1",
     "verbb/formie": "3.0.0-beta.11",

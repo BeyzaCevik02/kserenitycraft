@@ -16,44 +16,52 @@
 			<div class="product-content">
 				<div class="product-page">
 					<div class="image-carousel">
-						<div class="image active" data-index="0">
-							<img src="/assets/Screenshot_78_2000x.webp" alt="Image 1">
-						</div>
-						<div class="image" data-index="1">
-							<img src="/assets/Screenshot_89_400x (1).webp" alt="Image 2">
-						</div>
-						<div class="image" data-index="2">
-							<img src="/assets/SVG/SVG/product1-2.svg" alt="Image 3">
-						</div>
+						{% for image in entry.image.all() %}
+							<div class="image{% if loop.first %} active{% endif %}" data-index="{{ loop.index0 }}">
+								<img src="{{ image.url }}" alt="{{ image.title }}">
+							</div>
+						{% endfor %}
 						<div class="carousel-arrows">
-							<span>←</span>
-							<span>→</span>
+							<span onclick="prevImage()">←</span>
+							<span onclick="nextImage()">→</span>
 						</div>
 					</div>
+					{% set price = entry.price %}
+					{% set amount = price.getAmount() %}
+					{% set currency = price.getCurrency() %}
 
 					<div class="product-details">
-						<div class="brand">Beauty of Joseon</div>
-						<div class="product-name">Relief Sun : Rice + Probiotics SPF50+ PA++++</div>
-						<div class="review">4.5 sterren</div>
-						<div class="availability">In Stock</div>
-						<div class="description">
-							The Beauty Of Joseon Relief Sun : Rice + Probiotics SPF50+ PA++++ is een organisch chemische zonnebrandcrème die zacht op de huid wordt aangebracht en is geformuleerd met huidkalmerende en verhelderende ingrediënten. Het heeft een krachtige UV-blok met zijn...
+						<div class="brand">{{ entry.merk }}</div>
+						<div class="product-name">{{ entry.soort }}</div>
+						<div class="availability">
+							{% if entry.voorraad > 0 %}
+								In Stock
+							{% else %}
+								SOLD OUT
+							{% endif %}
 						</div>
-						<div class="price">€20.00</div>
+						<div class="description">
+							{{ entry.description }}
+						</div>
+						<div class="price">{{ amount / 100 }}
+							{{ currency }}</div>
 						<div class="quantity">
 							<button>-</button>
 							<span>1</span>
 							<button>+</button>
 						</div>
-						<button class="add-to-cart">Add to Cart</button>
+						<button class="add-to-cart">
+							{% if entry.voorraad > 0 %}
+								Add to Cart
+							{% else %}
+								SOLD OUT
+							{% endif %}
+						</button>
 					</div>
+
 				</div>
 			</div>
 		</div>
-		<footer>
-			{% include '_snippets/_footer.twig' %}
-
-		</footer>
-		<script src="/script.js"></script>
 	</body>
-</html>
+</html></div><footer>
+{% include '_snippets/_footer.twig' %}</footer><script src="/script.js"></script></body></html>
