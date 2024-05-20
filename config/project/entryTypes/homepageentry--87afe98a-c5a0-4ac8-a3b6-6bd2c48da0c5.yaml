@@ -244,11 +244,26 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: b604aca1-59d4-4e78-883d-b5ac1d8bee64 # topTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 29362312-09d9-4840-be86-b36259f3ea9e
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 06c67e2e-d236-4a42-a3eb-053b87b2ab82
         userCondition: null
 handle: homepageentry
-hasTitleField: false
+hasTitleField: true
 icon: house
 name: 'Homepage Entry'
 showSlugField: false

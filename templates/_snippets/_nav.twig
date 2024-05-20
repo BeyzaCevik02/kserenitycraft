@@ -1,6 +1,11 @@
-{% set headerEntry = craft.entries.section('header').one() %}
-{% if headerEntry %}
-        {{ headerEntry.headerContent | raw }}
-{% else %}
-    <p>Header content not found.</p>
-{% endif %}
+{% set navigation = craft.navigate.raw('mainNav') %}
+
+<ul>
+    {% for item in navigation %}
+        <li class="{{ item.url == craft.app.request.url ? 'active' : '' }}">
+            <a href="{{ item.url }}">
+                {{ item.name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

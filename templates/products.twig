@@ -10,14 +10,16 @@
 		<div class="navbarpro" id="navbarjs">
 			{% include '_snippets/_nav.twig' %}
 		</div>
-		<div class="logo">
-			<img src="/assets/SVG/SVG/Logo-zwart.svg" alt="logo">
-		</div>
-		<div class="producten-titel">
-			<h1>Onze Producten</h1>
-			<p>Ontdek onze uitgebreide collectie Koreaanse skincare producten.</p>
-		</div>
-		<div
+		{% include '_snippets/_logoBlack.twig' %}
+
+		{% set productenPage = craft.entries.section('products').type('productenpage').one() %}
+		{% if productenPage %}
+			<div class="producten-titel">
+				<h1>{{ productenPage.productentitle }}</h1>
+				<p>{{ productenPage.productendescription }}</p>
+			</div>
+		{% endif %}
+		<divphp
 			class="background-producten">
 			<!-- Filter sectie -->
 			<div class="filter">
@@ -32,19 +34,17 @@
 					<input type="range" id="prijs-filter" min="0" max="1000">
 				</div>
 			</div>
+			{% set products = craft.entries.section('products').type('productentry').all() %}
 
 			<div class="product-grid">
 
 				<div class="product-row">
-					<div class="product-card">
-						{% set products = craft.entries.section('products').type('productentry').all() %}
+					{% for product in products %}
+						<div class="product-card">
+							{% include '_snippets/_skincareCard.twig' with { product: product } %}
+						</div>
+					{% endfor %}
 
-						{% for product in products %}
-							{% include '_skincareCard.twig' with { product: product } %}
-						{% endfor %}
-
-
-					</div>
 				</div>
 			</div>
 			<div class="pagination">

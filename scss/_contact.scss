@@ -5,11 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin-top: 130px;
+    width: auto;
     padding: 20px;
     background-color: $primary-color;
     color: $secondary-color;
+    overflow: hidden;
+
     h1{
         font-family: $font-bodoni;
     }

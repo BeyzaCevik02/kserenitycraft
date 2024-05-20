@@ -1,6 +1,7 @@
-color: null
+altTranslationKeyFormat: null
+altTranslationMethod: none
 fieldLayouts:
-  9165d3ce-67b2-4896-811e-1035ec2ba383:
+  ad41d11e-5517-4edc-8d60-eef257134401:
     tabs:
       -
         elementCondition: null
@@ -29,14 +30,14 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: ce65af05-cf64-40ce-b836-11c6a5b8cce2
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: c41cc2f3-7ea0-4364-bef4-97545f566191
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: a2a38407-09ac-4efb-8029-5a2effc4b312 # Footer Content
+            fieldUid: 7028ecad-3014-43e2-b223-a872366b97d6 # Image
             handle: null
             includeInCards: false
             instructions: null
@@ -45,21 +46,19 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e45dd48b-de12-4c10-a80f-d4fbf0338032
+            uid: f30875c5-c21b-48e8-87c8-26f41fa97835
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 68de04d9-d5ec-42b1-948e-adeb24cddd49
+        uid: 034a0410-c6d5-4b9b-99d2-a288d4fe1ca7
         userCondition: null
-handle: footer
-hasTitleField: true
-icon: ''
-name: Footer
-showSlugField: false
-showStatusField: true
-slugTranslationKeyFormat: null
-slugTranslationMethod: site
-titleFormat: ''
+fs: productimg
+handle: productimg
+name: productImg
+sortOrder: 5
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

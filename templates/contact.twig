@@ -9,13 +9,14 @@
 		<div class="navbarpro" id="navbarjs">
 			{% include '_snippets/_nav.twig' %}
 		</div>
-		<div class="logo">
-			<img src="/assets/SVG/SVG/Logo-zwart.svg" alt="logo">
-		</div>
+		{% include '_snippets/_logoBlack.twig' %}
+
+		{% set contact = craft.entries.section('contact').one() %}
+
 		<div class="form">
 			<div class="form__title">
-				<h1>Neem contact met ons op</h1>
-				<p>Heeft u een vraag, opmerking of suggestie? We zouden graag van je horen. Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met u op.</p>
+				<h1>{{ contact.formtitle }}</h1>
+				<p>{{ contact.formdescription }}</p>
 			</div>
 			<form class="contact-form">
 				<label for="name">Naam:</label>

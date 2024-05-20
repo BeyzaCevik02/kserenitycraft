@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: image
-instructions: 'Hierin steek je de foto van het product'
-name: Image
+handle: blacklogo
+instructions: 'Dit is je zwarte logo voor lichtere achtergronden'
+name: BlackLogo
 searchable: false
 settings:
   allowSelfRelations: false
@@ -9,7 +9,7 @@ settings:
   allowUploads: true
   allowedKinds: null
   branchLimit: null
-  defaultUploadLocationSource: 'volume:aa18b816-e7a6-4e90-94ca-6cae62db99e9' # productImg
+  defaultUploadLocationSource: 'volume:9a77c145-c53b-44a4-bdb2-2dc307052d32' # blackLogo
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
@@ -27,7 +27,7 @@ settings:
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:
-    - 'volume:aa18b816-e7a6-4e90-94ca-6cae62db99e9' # productImg
+    - 'volume:9a77c145-c53b-44a4-bdb2-2dc307052d32' # blackLogo
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

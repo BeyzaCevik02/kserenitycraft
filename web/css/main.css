@@ -473,11 +473,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin-top: 130px;
+  width: auto;
   padding: 20px;
   background-color: #e4d6d6;
   color: #a24e4e;
+  overflow: hidden;
 }
 .form h1 {
   font-family: "Bodoni Moda", serif;

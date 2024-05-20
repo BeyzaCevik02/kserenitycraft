@@ -6,6 +6,7 @@
     "craftcms/feed-me": "^6.0",
     "studioespresso/craft-dumper": "^5.0",
     "studioespresso/craft-navigate": "^5.1",
+    "verbb/formie": "3.0.0-beta.11",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

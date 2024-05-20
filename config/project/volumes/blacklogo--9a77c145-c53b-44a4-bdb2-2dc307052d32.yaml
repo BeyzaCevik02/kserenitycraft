@@ -1,6 +1,7 @@
-color: null
+altTranslationKeyFormat: null
+altTranslationMethod: none
 fieldLayouts:
-  9165d3ce-67b2-4896-811e-1035ec2ba383:
+  c27ffe14-97d1-4023-818d-30f5a0839f20:
     tabs:
       -
         elementCondition: null
@@ -29,14 +30,14 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: ce65af05-cf64-40ce-b836-11c6a5b8cce2
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: e4e78bdc-26be-4455-865c-72d3d8fee37d
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: a2a38407-09ac-4efb-8029-5a2effc4b312 # Footer Content
+            fieldUid: ec962417-3322-4da5-a5ad-df1967228a86 # BlackLogo
             handle: null
             includeInCards: false
             instructions: null
@@ -45,21 +46,19 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e45dd48b-de12-4c10-a80f-d4fbf0338032
+            uid: d8c41e6b-23b4-4c8b-a84d-5d8b7e2c524f
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 68de04d9-d5ec-42b1-948e-adeb24cddd49
+        uid: b0de577d-c5f4-4efc-a4bd-ab25379a0258
         userCondition: null
-handle: footer
-hasTitleField: true
-icon: ''
-name: Footer
-showSlugField: false
-showStatusField: true
-slugTranslationKeyFormat: null
-slugTranslationMethod: site
-titleFormat: ''
+fs: blacklogo
+handle: blacklogo
+name: blackLogo
+sortOrder: 4
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+transformFs: blacklogo
+transformSubpath: ''

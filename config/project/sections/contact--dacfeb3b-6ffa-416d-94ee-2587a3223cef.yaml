@@ -1,11 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 65305b29-a1b4-4736-8ef8-a757decd3de9 # ProductEntry
-  - 259b293c-e5d6-482f-98e8-158a8a0f6b88 # ProductenPage
-handle: products
+  - 4949eae4-4151-4200-969e-16fb4e858353 # contact
+handle: contact
 maxAuthors: 1
-name: Products
+name: Contact
 previewTargets:
   -
     __assoc__:
@@ -23,6 +22,6 @@ siteSettings:
   30863589-1efd-4876-8616-a9940a064ced: # kserenity-skincare
     enabledByDefault: true
     hasUrls: true
-    template: products/_entry
-    uriFormat: 'products/{slug}'
-type: channel
+    template: contact.twig
+    uriFormat: contact
+type: single

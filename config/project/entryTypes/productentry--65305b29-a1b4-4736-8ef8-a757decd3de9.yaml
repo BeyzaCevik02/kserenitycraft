@@ -113,7 +113,7 @@ fieldLayouts:
         uid: 558c8426-0c72-4ae9-b8d0-b0b70909d1e6
         userCondition: null
 handle: productentry
-hasTitleField: false
+hasTitleField: true
 icon: basket-shopping
 name: ProductEntry
 showSlugField: false
