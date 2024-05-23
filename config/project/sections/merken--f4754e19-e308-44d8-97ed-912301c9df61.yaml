@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 4fb85cd4-efac-460c-8f5b-5ff376849212 # MerkType
+handle: merken
+maxAuthors: 1
+name: Merken
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  30863589-1efd-4876-8616-a9940a064ced: # kserenity-skincare
+    enabledByDefault: true
+    hasUrls: true
+    template: merken/_entry
+    uriFormat: 'merken/{slug}'
+structure:
+  maxLevels: null
+  uid: bb037a83-796b-4c44-8ff1-3024c15da008
+type: structure

@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: contactmatrix
+instructions: 'Hierin kan je de tekst en foto toevoegen van je contact sectie'
+name: ContactMatrix
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 6674a1a0-2dfe-4f5d-8551-b4cc53faf7e6 # TextBlock
+    - 99231847-01ad-49a3-9f72-28748387cf90 # ImageBlock
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

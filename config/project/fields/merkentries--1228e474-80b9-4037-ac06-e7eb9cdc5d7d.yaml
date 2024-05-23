@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: merkentries
+instructions: 'Dit zijn je merken'
+name: MerkEntries
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  sources:
+    - 'section:f4754e19-e308-44d8-97ed-912301c9df61' # Merken
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

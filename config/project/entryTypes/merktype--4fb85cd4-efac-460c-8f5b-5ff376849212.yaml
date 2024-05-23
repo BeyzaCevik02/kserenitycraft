@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  eccfb875-f3ea-4c7d-bfcd-f1daddf98bab:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c7ca7a0d-ddef-4fa3-86cf-659f4cbd27ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b3d2304b-f423-490c-a5c9-719f9bfcc2e8 # Merk
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6f02575f-fd06-4f2c-9751-cabd1dc7d7d3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: db9423bd-c30a-4c87-8e3e-eac5b5abcd84
+        userCondition: null
+handle: merktype
+hasTitleField: true
+icon: ''
+name: MerkType
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

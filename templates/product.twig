@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Product | K-Serenity Skincare</title>
+		<title>{{ entry.soort }} | K-Serenity Skincare</title>
 		<link rel="stylesheet" href="/css/main.css">
 	</head>
 	<body>
@@ -29,9 +29,11 @@
 					{% set price = entry.price %}
 					{% set amount = price.getAmount() %}
 					{% set currency = price.getCurrency() %}
+					{% set merk = entry.merkentries.one() %}
+
 
 					<div class="product-details">
-						<div class="brand">{{ entry.merk }}</div>
+						<div class="brand">{{ merk }}</div>
 						<div class="product-name">{{ entry.soort }}</div>
 						<div class="availability">
 							{% if entry.voorraad > 0 %}

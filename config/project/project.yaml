@@ -1,4 +1,4 @@
-dateModified: 1716227886
+dateModified: 1716500250
 email:
   fromEmail: beyza.cevik@student.pxl.be
   fromName: kserenity-skincare
@@ -36,6 +36,7 @@ meta:
   __names__:
     0e4ebf1a-a242-45fb-9206-cad3057ccbc4: contactTel # contactTel
     0e72854b-8c3b-4835-8c77-2bad29d28ea8: contactTitleSocials # contactTitleSocials
+    4fb85cd4-efac-460c-8f5b-5ff376849212: MerkType # MerkType
     6beb16d9-e71f-4fb5-826a-c52b6a7a8857: ProductenTitle # ProductenTitle
     7cb8b0db-c230-471d-bd63-642a532fc6de: ContactImg # ContactImg
     7dcb02f2-e42e-4938-b65a-c23f9090601b: contactTitleMail # contactTitleMail
@@ -47,12 +48,15 @@ meta:
     32ec3ad3-e3ec-488b-9670-185dcae1a236: Header # Header
     48f60c35-6b15-498e-85e5-ea8d92527c3c: Homepage # Homepage
     49dd7690-de8b-4c4c-acf6-ea0bed781c88: contactMail # contactMail
+    57c5864f-39e3-4d02-b5da-84682a68b4ff: ProductenMatrix # ProductenMatrix
     87afe98a-c5a0-4ac8-a3b6-6bd2c48da0c5: 'Homepage Entry' # Homepage Entry
     259b293c-e5d6-482f-98e8-158a8a0f6b88: ProductenPage # ProductenPage
     685d1f25-9518-4ae0-af58-7792cf56ee2b: homepageButtonText # homepageButtonText
     723be697-4f69-4566-9a16-46be763d8156: ContactTitle # ContactTitle
+    1228e474-80b9-4037-ac06-e7eb9cdc5d7d: MerkEntries # MerkEntries
     4949eae4-4151-4200-969e-16fb4e858353: contact # contact
     5548eee2-fe00-4fee-bd86-6296f8f13aa5: Header # Header
+    6674a1a0-2dfe-4f5d-8551-b4cc53faf7e6: TextBlock # TextBlock
     7028ecad-3014-43e2-b223-a872366b97d6: Image # Image
     7331cb0c-7b5e-488f-9bc0-5b9eab8fb72d: siteLogo # siteLogo
     9971f49b-6318-4be1-af82-ffccc357c3e5: Footer # Footer
@@ -61,6 +65,7 @@ meta:
     503551c3-729b-4630-a072-c1121d331485: Soort # Soort
     09198301-3e1d-45c3-9125-88769e8fff27: ProductenDescription # ProductenDescription
     30863589-1efd-4876-8616-a9940a064ced: kserenity-skincare # kserenity-skincare
+    99231847-01ad-49a3-9f72-28748387cf90: ImageBlock # ImageBlock
     a2a38407-09ac-4efb-8029-5a2effc4b312: 'Footer Content' # Footer Content
     a6fcea98-619b-48a3-a423-6091162e0b38: Description # Description
     aa18b816-e7a6-4e90-94ca-6cae62db99e9: productImg # productImg
@@ -77,10 +82,12 @@ meta:
     d175920a-2bd8-4fe4-8ddd-19635c38a533: Voorraad # Voorraad
     d2930100-335c-47ed-9934-ca2c76e54f16: homepageButtonLink # homepageButtonLink
     dacfeb3b-6ffa-416d-94ee-2587a3223cef: Contact # Contact
+    e5cc458e-91ec-4257-a1f1-d20c8aa00a8b: ContactMatrix # ContactMatrix
     e55d4be9-a010-4072-b605-170ec7dcc2f0: infoTitle # infoTitle
     ec962417-3322-4da5-a5ad-df1967228a86: BlackLogo # BlackLogo
     ee419d88-11a8-4bdd-ad75-63badd6cf7c0: Price # Price
     f35a1087-1bdc-4c52-beb4-47b65b821e6c: New # New
+    f4754e19-e308-44d8-97ed-912301c9df61: Merken # Merken
     f8145be8-29f8-43ae-b178-99d5f61d0b6c: Footer # Footer
     f2746321-ef1e-4494-a19b-998823890d27: FormDescription # FormDescription
 plugins:

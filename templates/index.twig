@@ -53,10 +53,13 @@
 
 		<div class="contact">
 			<div class="title">
-				{% if homepage.contactimg.one() %}
-					<img src="{{ homepage.contactimg.one().url }}" alt="logo">
-				{% endif %}
-				<h2>{{ homepage.contacttitle }}</h2>
+				{% for block in homepage.contactmatrix.all() %}
+					{% if block.contactimg|length %}
+						<img src="{{ block.contactimg.one().url }}" alt="{{ block.contacttitle }}">
+					{% endif %}
+					<h2>{{ block.contacttitle }}</h2>
+
+				{% endfor %}
 			</div>
 			<div class="gegevens">
 				<h2>{{ homepage.contacttitlemail }}</h2>

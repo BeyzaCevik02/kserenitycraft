@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: productenmatrix
+instructions: 'Hierin staan je 3 zelfgekozen producten om op uw hoofdpagina te laten zien.'
+name: ProductenMatrix
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 65305b29-a1b4-4736-8ef8-a757decd3de9 # ProductEntry
+  includeTableView: false
+  maxEntries: 3
+  minEntries: 1
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

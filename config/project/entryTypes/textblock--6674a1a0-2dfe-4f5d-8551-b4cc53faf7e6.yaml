@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  52352858-6970-4201-b999-2b12762bcc94:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cf6edf83-8c2e-45e3-b9df-4c2165e6cbe5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 723be697-4f69-4566-9a16-46be763d8156 # ContactTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0023c48-2eac-4874-a975-3e54066cb3b7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bff88bf4-330c-4ee5-a2f3-a4336e84fa0e
+        userCondition: null
+handle: textblock
+hasTitleField: true
+icon: ''
+name: TextBlock
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
