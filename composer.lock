@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a64ac88a19f9006878b234205020843b",
+    "content-hash": "7dcf4923320de072d033d9cc9e80c56a",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -498,11 +498,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.1.5",
+            "version": "5.1.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/a8d6f23a0885a04a235a1c20d9ac0958309972f5",
-                "reference": "a8d6f23a0885a04a235a1c20d9ac0958309972f5",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/916d3185a79a940d0d5d11adcf8b86c973a065ca",
+                "reference": "916d3185a79a940d0d5d11adcf8b86c973a065ca",
                 "shasum": ""
             },
             "require": {
@@ -599,7 +599,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-05-22T19:50:18+00:00"
+            "time": "2024-05-23T23:17:09+00:00"
         },
         {
             "name": "craftcms/feed-me",
@@ -4241,11 +4241,11 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "5.2.2",
+            "version": "5.3.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/55d15ee6a6fff574aeef6928d2b3e2a8659f1e57",
-                "reference": "55d15ee6a6fff574aeef6928d2b3e2a8659f1e57",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/ac06755a96d2f255c80d786856b723c259035bfa",
+                "reference": "ac06755a96d2f255c80d786856b723c259035bfa",
                 "shasum": ""
             },
             "require": {
@@ -4293,7 +4293,7 @@
                 }
             ],
             "description": "The most reliable form builder that's ready for wherever your project takes you.",
-            "time": "2024-05-22T20:07:31+00:00"
+            "time": "2024-05-24T16:58:59+00:00"
         },
         {
             "name": "spomky-labs/cbor-php",

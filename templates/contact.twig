@@ -13,27 +13,17 @@
 
 		{% set contact = craft.entries.section('contact').one() %}
 
+
+
 		<div class="form">
 			<div class="form__title">
 				<h1>{{ contact.formtitle }}</h1>
 				<p>{{ contact.formdescription }}</p>
 			</div>
-			<form class="contact-form">
-				<label for="name">Naam:</label>
-				<input type="text" id="name" name="name" required>
-
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-
-				<label for="onderwerp">Onderwerp:</label>
-				<input type="text" id="onderwerp" name="onderwerp" required>
-
-				<label for="message">Bericht:</label>
-				<textarea id="message" name="message" rows="5" required></textarea>
-
-				<button type="submit">Verzend</button>
-			</form>
+			{{ craft.freeform.form('contactForm') }}
 		</div>
+		
+
 		<footer>
 			{% include '_snippets/_footer.twig' %}
 

@@ -1,11 +1,11 @@
-    {% set merk = product.merkentries.one() %}
+{# % set merk = product.merkentries.one() % #}
 
     {# Output product card HTML #}
-    <div class="product-card">
+    {#<div class="product-card">
         <a href="{{ product.url }}">
             <img src="{{ product.image.one().url }}" alt="{{ merk }} - {{ product.soort }}">
             <h2>{{ merk }}</h2>
             <p>{{ product.soort }}</p>
             <p class="prijskleur">{{ product.price.getAmount()/100 }} {{ product.price.getCurrency() }}</p>
         </a>
-    </div>
+    </div>#}

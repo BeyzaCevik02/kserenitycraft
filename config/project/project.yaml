@@ -1,4 +1,4 @@
-dateModified: 1716500250
+dateModified: 1716572511
 email:
   fromEmail: beyza.cevik@student.pxl.be
   fromName: kserenity-skincare
@@ -109,6 +109,10 @@ plugins:
     enabled: true
     licenseKey: D7QBSLHITXUVBKFQVYMRAURW
     schemaVersion: 3.4.4
+  freeform:
+    edition: express
+    enabled: true
+    schemaVersion: 5.1.0
   navigate:
     edition: standard
     enabled: true
