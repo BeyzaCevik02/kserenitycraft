@@ -1,0 +1,32 @@
+columnSuffix: null
+handle: positionimage
+instructions: 'Dit is de positie van je afbeelding die je kan kiezen, standaard is dit links'
+name: positionImage
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Links
+        -
+          - value
+          - links
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Rechts
+        -
+          - value
+          - rechts
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

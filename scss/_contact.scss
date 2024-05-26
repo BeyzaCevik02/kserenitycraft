@@ -21,6 +21,7 @@
 }
 .form__title{
     text-align: center;
+    padding-right: 20px;
 }
 .contact-form{
     display: flex;
@@ -43,20 +44,25 @@
     border-radius: 4px;
     font-size: 16px;
 }
+.contact-form textarea {
+    resize: none;
+    height: 200px; /* Een vaste hoogte voor de textarea */
+}
+
 
 .contact-form button {
     width: 50%;
     padding: 15px;
-    border: 1px solid white;
-    color: $secondary-color;
+    border: 1px solid $secondary-color !important;
+    background-color: $secondary-color !important;
+    color: white;
     border: none;
     border-radius: 4px;
     font-size: 18px;
     font-family: $font-mulish;
     cursor: pointer;
     &:hover{
-        background-color: $secondary-color;
-
+        background-color: #683333 !important;
     }
 }
 

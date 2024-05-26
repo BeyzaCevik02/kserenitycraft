@@ -156,6 +156,36 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 723be697-4f69-4566-9a16-46be763d8156 # ContactTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9f504901-386f-4407-a943-8149b00de155
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c1301a7d-dc92-494c-ba91-175a1a8e411f # ContactImg
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23f9f656-7726-466b-8fbe-758808086002
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 7dcb02f2-e42e-4938-b65a-c23f9090601b # contactTitleMail
             handle: null
             includeInCards: false

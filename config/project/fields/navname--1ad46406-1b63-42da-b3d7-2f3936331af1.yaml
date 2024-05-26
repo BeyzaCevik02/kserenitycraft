@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: navname
+instructions: 'Dit is de naam van je link'
+name: NavName
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="nl">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>K-Serenity Skincare</title>
-		<script src="https://kit.fontawesome.com/7a5bc158b3.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="/css/main.css">
-	</head>
-	<body>
-		{% hook 'after-body-start' %}
+{% extends "_layout.twig" %}
 
-		{% set homepage = craft.entries.section('homepage').one() %}
-
+{% block content %}
 		<div class="navbar" id="navbarjs">
 			{% include '_snippets/_nav.twig' %}
 		</div>
@@ -53,13 +42,10 @@
 
 		<div class="contact">
 			<div class="title">
-			{#{% for block in homepage.contactmatrix.all() %} #}
-					{#{% if block.contactimg|length %}#}
-	{#					<img src="{{ block.contactimg.one().url }}" alt="{{ block.contacttitle }}">#}
-					{#{% endif %}#}
-				{#	<h2>{{ block.contacttitle }}</h2>}
-
-			{#{% endfor %}#}
+				{% if homepage.contactimg.one() %}
+					<img src="{{ homepage.contactimg.one().url }}" alt="logo">
+				{% endif %}
+				<h2>{{ homepage.contacttitle }}</h2>
 			</div>
 			<div class="gegevens">
 				<h2>{{ homepage.contacttitlemail }}</h2>
@@ -75,8 +61,4 @@
 				</a>
 			</div>
 		</div>
-		<footer>
-			{% include '_snippets/_footer.twig' %}
-		</footer>
-	</body>
-</html>
+{% endblock %}

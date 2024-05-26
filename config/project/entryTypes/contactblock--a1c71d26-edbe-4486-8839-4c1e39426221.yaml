@@ -1,0 +1,95 @@
+color: red
+fieldLayouts:
+  0e235c1b-63ad-463f-8b52-c1220cab2dac:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 316b5e86-a95e-4d91-ab4f-0737a586c01e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: be983836-6554-4519-b171-a0260905f6a6 # FormTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3145e262-552f-4d55-bf9b-94a90d9b3445
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2746321-ef1e-4494-a19b-998823890d27 # FormDescription
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89f3d037-7e9f-4306-949a-828690eb1d0a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 55753d0c-0fda-4412-a22d-75868cdabef0 # ContactFormulier
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9973b09d-4d54-4192-b5b6-0b419de6da1a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 83e38421-e4d5-4e5e-833a-862fd90bb653
+        userCondition: null
+handle: contactblock
+hasTitleField: true
+icon: address-book
+name: ContactBlock
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

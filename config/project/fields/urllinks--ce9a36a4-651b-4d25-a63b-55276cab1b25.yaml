@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: urllinks
+instructions: 'Dit is de URL naar je links'
+name: urlLinks
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

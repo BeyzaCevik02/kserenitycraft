@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 4949eae4-4151-4200-969e-16fb4e858353 # contact
+  - 4949eae4-4151-4200-969e-16fb4e858353 # contactEntry
 handle: contact
 maxAuthors: 1
 name: Contact

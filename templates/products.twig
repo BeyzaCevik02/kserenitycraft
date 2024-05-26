@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Products | K-Serenity Skincare</title>
-		<link rel="stylesheet" href="/css/main.css">
-	</head>
-	<body>
+{% extends "_layout.twig" %}
+
+{% block content %}
 		<div class="navbarpro" id="navbarjs">
 			{% include '_snippets/_nav.twig' %}
 		</div>
 		{% include '_snippets/_logoBlack.twig' %}
 
-		{% set productenPage = craft.entries.section('products').type('productenpage').one() %}
 		{% if productenPage %}
 			<div class="producten-titel">
 				<h1>{{ productenPage.productentitle }}</h1>
@@ -23,14 +16,22 @@
 			<div class="filter">
 				<div class="filter-col">
 					<label for="merk-filter">Filter by brand:</label>
-					<select id="merk-filter"> 
-						<option value="merk1">Merk 1</option>
-						<option value="merk2">Merk 2</option>
+					<select id="merk-filter" name="brand">
+						<option value="">All</option>
+						{% for brand in craft.entries.section('brands').all() %}
+							<option value="{{ brand.id }}" {% if brand.id == craft.app.request.getQueryParam('brand') %} selected {% endif %}>
+								{{ brand.title }}
+							</option>
+						{% endfor %}
 					</select>
 					<label for="prijs-filter" class="prijs-filter">Filter by price:</label>
 					<select id="prijs-filter" class="prijs-filter">
-						<option value="all"> All </option>
-						<option value="1-10"> €1 -  €10 </option>
+						<option value="all">
+							All
+						</option>
+						<option value="1-10">
+							€1 -  €10
+						</option>
 						<option value="10-20">€10 - €20</option>
 						<option value="20-30">€20 - €30</option>
 						<option value="30-40">€30 - €40</option>
@@ -38,12 +39,7 @@
 					</select>
 				</div>
 			</div>
-			{% set query = craft.entries()
-            .section('products')
-            .type('productentry')
-            .orderBy('postDate desc') %}
 
-			{% paginate query.limit(6) as pageInfo, products %}
 
 				<div class="product-grid">
 					<div class="product-row">
@@ -52,26 +48,20 @@
 						{% endfor %}
 					</div>
 				</div>
-
 				<div class="pagination">
-					{% if pageInfo.getPrevUrl() %}
-						<a href="{{ pageInfo.getPrevUrl() }}">&laquo; Vorige</a>
+					{% if pageInfo.prevUrl %}
+						<a href="{{ siteUrl(pageInfo.prevUrl) }}">Previous</a>
 					{% endif %}
-					{% for page, url in pageInfo.getPrevUrls(2) %}
-						<a href="{{ url }}">{{ page }}</a>
-					{% endfor %}
-					<span>{{ pageInfo.currentPage }}</span>
-					{% for page, url in pageInfo.getNextUrls(2) %}
-						<a href="{{ url }}">{{ page }}</a>
-					{% endfor %}
-					{% if pageInfo.getNextUrl() %}
-						<a href="{{ pageInfo.getNextUrl() }}">Volgende &raquo;</a>
+
+					<span>Page
+						{{ pageInfo.currentPage }}
+						of
+						{{ pageInfo.totalPages }}</span>
+
+					{% if pageInfo.nextUrl %}
+						<a href="{{ siteUrl(pageInfo.nextUrl) }}">Next</a>
 					{% endif %}
 				</div>
 			</div>
-			<footer>
-				{% include '_snippets/_footer.twig' %}
-			</footer>
-		</body>
-	</body>
-</html>
+{% endblock %}
+

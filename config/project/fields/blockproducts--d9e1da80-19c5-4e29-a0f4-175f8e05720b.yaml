@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: blockproducts
+instructions: 'it zijn je producten waarvan je  gaat mogen kiezen om het weer te geven'
+name: blockProducts
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 3
+  minRelations: 1
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:b57b1002-f8d0-4634-b367-e7014e73cc8b' # Products
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

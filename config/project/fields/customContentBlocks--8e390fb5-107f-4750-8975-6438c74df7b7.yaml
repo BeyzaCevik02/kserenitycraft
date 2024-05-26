@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: customContentBlocks
+instructions: 'Dit zijn je blokjes waarin je zelf dingen kan aanpassen en gebruiken'
+name: 'Custom Content Blocks'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - a1c71d26-edbe-4486-8839-4c1e39426221 # ContactBlock
+    - 50710bb5-f101-45c9-a9ee-7d7d6ee91177 # TextImgBlock
+    - 9f0a7f3f-bace-4561-8976-d096dfd5f841 # ProductsBlock
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: navigationitems
+instructions: 'Dit zijn je links van je navigatie'
+name: navigationItems
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - fa2f48b7-41a7-479d-892e-cfcb3bf5409d # Navigation Item
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,63 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+	<div class="navbarpro" id="navbarjs">
+		{% include '_snippets/_nav.twig' %}
+	</div>
+	{% include '_snippets/_logoBlack.twig' %}
+
+	<div class="custom">
+		<h1>{{ entry.title }}</h1>
+		<div class="content-blocks">
+			{% for block in entry.customContentBlocks.all() %}
+				{% if block.type == 'contactblock' %}
+					<div class="custom-form">
+						{% if block.title %}
+							<h2>{{ block.title }}</h2>
+						{% endif %}
+						<div class="contact-form">
+							{{ craft.formie.renderForm('customForm') }}
+						</div>
+					</div>
+				{% elseif block.type == 'textimgblock' %}
+					<div class="text-img-block {{ block.positionimage }}">
+						{% if block.title %}
+							<h2>{{ block.title }}</h2>
+						{% endif %}
+						<div class="custom-content">
+							{% set image = block.blockimage.one() %}
+							{% if image %}
+								{% if block.positionimage == 'links' %}
+									<div class="content-img">
+										<img src="{{ image.url }}" alt="{{ image.title }}">
+									</div>
+									<div class="content-p">
+										<p>{{ block.blocktekst }}</p>
+									</div>
+								{% else %}
+									<div class="content-p">
+										<p>{{ block.blocktekst|raw }}</p>
+									</div>
+									<div class="content-img">
+										<img src="{{ image.url }}" alt="{{ image.title }}">
+									</div>
+								{% endif %}
+							{% endif %}
+						</div>
+					</div>
+				{% elseif block.type == 'productsblock' %}
+					<div class="producten">
+						{% if block.title %}
+							<h2>{{ block.title }}</h2>
+						{% endif %}
+						<div class="product-row">
+							{% for product in block.blockproducts.all() %}
+								{% include '_snippets/_skincareCard.twig' with { product: product } %}
+							{% endfor %}
+						</div>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

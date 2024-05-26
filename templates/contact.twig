@@ -1,17 +1,10 @@
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Contact | K-Serenity Skincare</title>
-		<link rel="stylesheet" href="/css/main.css">
-	</head>
-	<body>
+{% extends "_layout.twig" %}
+
+{% block content %}
 		<div class="navbarpro" id="navbarjs">
 			{% include '_snippets/_nav.twig' %}
 		</div>
 		{% include '_snippets/_logoBlack.twig' %}
-
-		{% set contact = craft.entries.section('contact').one() %}
 
 
 
@@ -20,14 +13,10 @@
 				<h1>{{ contact.formtitle }}</h1>
 				<p>{{ contact.formdescription }}</p>
 			</div>
-			{{ craft.freeform.form('contactForm') }}
+			<div class="contact-form">
+				{{ craft.formie.renderForm('contactus') }}
+			</div>
 		</div>
-		
 
-		<footer>
-			{% include '_snippets/_footer.twig' %}
+{% endblock %}
 
-		</footer>
-
-	</body>
-</html>

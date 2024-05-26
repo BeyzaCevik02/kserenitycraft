@@ -1,0 +1,65 @@
+color: sky
+fieldLayouts:
+  d7916a0f-432e-4518-b3b6-92fe4407049a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 11445772-0b25-4aa6-8cdd-9a7f4afd1a19
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8e390fb5-107f-4750-8975-6438c74df7b7 # Custom Content Blocks
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fe611b0d-7697-4f1c-8cc3-5ae1ec3fb6f2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ea09a180-ea8b-488c-aa72-9eed3412dffd
+        userCondition: null
+handle: contentBlocks
+hasTitleField: true
+icon: bookmark
+name: 'Content Blocks'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,11 +1,14 @@
-{% set navigation = craft.navigate.raw('mainNav') %}
+{% set siteSettings = craft.app.globals.getSetByHandle('mainNavigation') %}
+{% if siteSettings %}
+    {% set navigationItems = siteSettings.navigationitems.all() %}
 
-<ul>
-    {% for item in navigation %}
-        <li class="{{ item.url == craft.app.request.url ? 'active' : '' }}">
-            <a href="{{ item.url }}">
-                {{ item.name }}
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+    <ul>
+        {% for item in navigationItems %}
+            <li class="{{ item.urllinks == craft.app.request.url ? 'active' : '' }}">
+                <a href="{{ item.urllinks }}">
+                    {{ item.navname }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

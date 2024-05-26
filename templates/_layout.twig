@@ -1,6 +1,42 @@
 <html lang="en">
-<head>
- <!-- Link naar mmain scss, icons en google fonts-->
-</head>
-<!--gebruik hier include block endblok,...-->
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			K-Serenity Skincare</title>
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		{# cookies #}
+		{% hook 'after-body-start' %}
+
+		{# home #}
+		{% set homepage = craft.entries.section('homepage').one() %}
+		{% set products = craft.entries.section('products').type('productentry').limit(3) %}
+
+		{# products #}
+		{% set productenPage = craft.entries.section('products').type('productenpage').one() %}
+		{% set query = craft.entries()
+            .section('products')
+            .type('productentry')
+            .orderBy('postDate desc') %}
+		{% paginate query.limit(6) as pageInfo, products %}
+
+		{# contact #}
+		{% set contact = craft.entries.section('contact').one() %}
+
+		{# custom #}
+		{% set entry = craft.entries.section('custompages').one() %}
+
+		{# block content #}
+		{% block content %}{% endblock %}
+
+		{# footer #}
+		<footer>
+			{% include '_snippets/_footer.twig' %}
+		</footer>
+		{# GSAP #}
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+	</body>
+</html>

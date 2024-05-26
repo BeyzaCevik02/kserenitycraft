@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 32ec3ad3-e3ec-488b-9670-185dcae1a236 # Header
-handle: header
+  - 7e8c3b95-aa54-49c0-94da-65851b734c98 # Content Blocks
+handle: custompages
 maxAuthors: 1
-name: Header
+name: 'Custom Pages'
 previewTargets:
   -
     __assoc__:
@@ -21,7 +21,7 @@ propagationMethod: all
 siteSettings:
   30863589-1efd-4876-8616-a9940a064ced: # kserenity-skincare
     enabledByDefault: true
-    hasUrls: true
-    template: header/_entry
-    uriFormat: header
+    hasUrls: false
+    template: null
+    uriFormat: null
 type: single

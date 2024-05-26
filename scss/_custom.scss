@@ -1,0 +1,57 @@
+@use 'base' as *;
+
+.custom{
+    margin-top: 130px;
+    background-color: $primary-color;
+    color: $secondary-color;
+    h1{
+        font-family: $font-bodoni;
+        padding-top: 20px;
+        text-align: center;
+    }
+    p{
+        font-family: $font-mulish;
+    }
+}
+.content-blocks{
+    .producten{
+        padding-top: 20px;
+    }
+}
+.custom-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: $tertiary-color;
+    overflow: hidden;
+    padding-bottom: 40px;
+    h2{
+        font-family: $font-bodoni;
+    }
+}
+.custom-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    .content-p, .content-img{
+        width: calc(100% / 2 - 2em);
+    }
+    .content-p{
+        text-align: left;
+    }
+    .content-img{
+        img{
+            width: 70%;
+        }
+    }
+}
+.text-img-block{
+    text-align: center;
+    padding: 40px 0;
+    background-color: $secondary-color;
+    color: white;
+}
