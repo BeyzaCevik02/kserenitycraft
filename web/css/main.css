@@ -594,6 +594,7 @@ footer {
 }
 .custom-content .content-p {
   text-align: left;
+  padding-left: 50px;
 }
 .custom-content .content-img img {
   width: 70%;
