@@ -1,0 +1,15 @@
+columnSuffix: null
+handle: maxprijs
+instructions: 'Dit is de maximum prijs voor je filters'
+name: maxPrijs
+searchable: false
+settings:
+  currency: EUR
+  defaultValue: null
+  max: 10000
+  min: null
+  showCurrency: true
+  size: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Money

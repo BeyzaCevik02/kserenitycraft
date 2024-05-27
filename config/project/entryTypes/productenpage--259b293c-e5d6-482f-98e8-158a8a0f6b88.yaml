@@ -36,6 +36,21 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            elementCondition: null
+            fieldUid: eb347641-4951-4285-9907-8703b318a51a # MerkLabel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b91455a-f815-4f0a-939d-e98d5d8f80a2
+            userCondition: null
+            warning: null
+            width: 100
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true

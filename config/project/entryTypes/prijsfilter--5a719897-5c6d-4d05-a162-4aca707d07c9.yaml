@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  2e2cf0c5-a907-4c67-8d02-e0ec8a54b778:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7967d03f-6a1e-45a4-b335-8f823f2eacab
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 17a5ec90-55dd-4fbc-ab4f-191c1a9387d8 # filterlabel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6c9efe3a-1426-4056-bb64-47b46ab2d8b3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 11f596f5-4192-4383-88b2-02f847936611 # Prijscategorieën
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3908d024-41fa-45e2-8b05-b2d8bc474433
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cede6dab-6d97-4f6e-be3f-ef3c634367b8
+        userCondition: null
+handle: prijsfilter
+hasTitleField: true
+icon: ''
+name: PrijsFilter
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

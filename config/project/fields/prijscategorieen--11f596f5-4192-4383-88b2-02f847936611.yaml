@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: prijscategorieen
+instructions: 'Dit zijn je prijzen voor filters'
+name: Prijscategorieën
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 59b2dce8-c39b-43ac-9d28-dcd203ac40b7 # Prijscategorie
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

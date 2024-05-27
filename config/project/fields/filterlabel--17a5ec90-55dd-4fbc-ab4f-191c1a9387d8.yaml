@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: filterlabel
+instructions: 'Dit is de titel van je filter'
+name: filterlabel
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

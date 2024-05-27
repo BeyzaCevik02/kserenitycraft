@@ -1,67 +1,106 @@
 {% extends "_layout.twig" %}
 
 {% block content %}
-		<div class="navbarpro" id="navbarjs">
-			{% include '_snippets/_nav.twig' %}
-		</div>
-		{% include '_snippets/_logoBlack.twig' %}
+	<div class="navbarpro" id="navbarjs">
+		{% include '_snippets/_nav.twig' %}
+	</div>
+	{% include '_snippets/_logoBlack.twig' %}
 
-		{% if productenPage %}
-			<div class="producten-titel">
-				<h1>{{ productenPage.productentitle }}</h1>
-				<p>{{ productenPage.productendescription }}</p>
-			</div>
-		{% endif %}
-		<div class="background-producten">
-			<div class="filter">
-				<div class="filter-col">
-					<label for="merk-filter">Filter by brand:</label>
+	{% if productenPage %}
+		<div class="producten-titel">
+			<h1>{{ productenPage.productentitle }}</h1>
+			<p>{{ productenPage.productendescription }}</p>
+		</div>
+	{% endif %}
+	<div class="background-producten">
+		<div class="filter">
+			<div class="filter-col">
+				<form action="">
+					<label for="merk-filter">{{ productenPage.merklabel }}</label>
 					<select id="merk-filter" name="brand">
 						<option value="">All</option>
-						{% for brand in craft.entries.section('brands').all() %}
+						{% for brand in craft.entries.section('merken').all() %}
 							<option value="{{ brand.id }}" {% if brand.id == craft.app.request.getQueryParam('brand') %} selected {% endif %}>
 								{{ brand.title }}
 							</option>
 						{% endfor %}
 					</select>
-					<label for="prijs-filter" class="prijs-filter">Filter by price:</label>
-					<select id="prijs-filter" class="prijs-filter">
-						<option value="all">
-							All
-						</option>
-						<option value="1-10">
-							€1 -  €10
-						</option>
-						<option value="10-20">€10 - €20</option>
-						<option value="20-30">€20 - €30</option>
-						<option value="30-40">€30 - €40</option>
-						<option value="40-50">€40 - €50</option>
-					</select>
-				</div>
+
+					{% set prijsfilterEntry = craft.entries.section('filters').type('prijsfilter').one() %}
+					{% if prijsfilterEntry %}
+						<label for="prijs-filter" class="prijs-filter">{{ prijsfilterEntry.filterlabel }}</label>
+						<select id="prijs-filter" name="price" class="prijs-filter">
+							<option value="">All</option>
+							{% for prijscategorie in prijsfilterEntry.prijscategorieen %}
+								{% set minPrijs = prijscategorie.minprijs.getAmount() / 100 %}
+								{% set maxPrijs = prijscategorie.maxprijs.getAmount() / 100 %}
+								<option value="{{ minPrijs }}-{{ maxPrijs }}" {% if craft.app.request.getQueryParam('price') == (minPrijs ~ '-' ~ maxPrijs) %} selected {% endif %}>
+									€{{ minPrijs }}
+									- €{{ maxPrijs }}
+								</option>
+							{% endfor %}
+						</select>
+					{% endif %}
+					<button type="submit" class="products-filters-button">Filter</button>
+				</form>
+
 			</div>
+		</div>
 
+		{% set priceFilter = craft.app.request.getQueryParam('price') %}
+		{% set brandFilter = craft.app.request.getQueryParam('brand') %}
 
-				<div class="product-grid">
-					<div class="product-row">
+		{% set query = craft.entries()
+            .section('products')
+            .type('productentry')
+            .orderBy('postDate desc')
+        %}
+
+		{% if brandFilter %}
+			{% set query = query.relatedTo({
+                targetElement: craft.entries.id(brandFilter).one()
+            }) %}
+		{% endif %}
+
+		{% if priceFilter %}
+			{% set priceRange = priceFilter | split('-') %}
+			{% set minPrice = priceRange[0] %}
+			{% set maxPrice = priceRange[1] %}
+			{% set query = query.price([
+                'and',
+                '>= ' ~ minPrice,
+                '<= ' ~ maxPrice
+            ]) %}
+		{% endif %}
+
+		{% paginate query.limit(6) as pageInfo, products %}
+
+			<div class="product-grid">
+				<div class="product-row">
+					{% if products|length %}
 						{% for product in products %}
 							{% include '_snippets/_skincareCard.twig' with { product: product } %}
 						{% endfor %}
-					</div>
-				</div>
-				<div class="pagination">
-					{% if pageInfo.prevUrl %}
-						<a href="{{ siteUrl(pageInfo.prevUrl) }}">Previous</a>
-					{% endif %}
-
-					<span>Page
-						{{ pageInfo.currentPage }}
-						of
-						{{ pageInfo.totalPages }}</span>
-
-					{% if pageInfo.nextUrl %}
-						<a href="{{ siteUrl(pageInfo.nextUrl) }}">Next</a>
+					{% else %}
+						<p style="font-family: 'Mulish', sans-serif;">No products found.</p>
 					{% endif %}
 				</div>
 			</div>
-{% endblock %}
 
+			<!-- Check pagination -->
+			<div class="pagination">
+				{% if pageInfo.prevUrl %}
+					<a href="{{ siteUrl(pageInfo.prevUrl) }}">Previous</a>
+				{% endif %}
+
+				<span>Page
+					{{ pageInfo.currentPage }}
+					of
+					{{ pageInfo.totalPages }}</span>
+
+				{% if pageInfo.nextUrl %}
+					<a href="{{ siteUrl(pageInfo.nextUrl) }}">Next</a>
+				{% endif %}
+			</div>
+		</div>
+	{% endblock %}

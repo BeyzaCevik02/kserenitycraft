@@ -1,0 +1,15 @@
+columnSuffix: null
+handle: minprijs
+instructions: 'Dit is je minimum prijs'
+name: minPrijs
+searchable: false
+settings:
+  currency: EUR
+  defaultValue: null
+  max: null
+  min: 1
+  showCurrency: true
+  size: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Money

@@ -1,4 +1,4 @@
-dateModified: 1716730875
+dateModified: 1716842583
 email:
   fromEmail: beyza.cevik@student.pxl.be
   fromName: kserenity-skincare
@@ -48,8 +48,10 @@ meta:
     0e4ebf1a-a242-45fb-9206-cad3057ccbc4: contactTel # contactTel
     0e72854b-8c3b-4835-8c77-2bad29d28ea8: contactTitleSocials # contactTitleSocials
     1ad46406-1b63-42da-b3d7-2f3936331af1: NavName # NavName
+    3a49221b-02bb-4db7-ad3d-edb7f2022d43: MerkFilter # MerkFilter
     4db4e5e8-bf47-4751-bbd0-cf8b7268ab06: blockTitel # blockTitel
     4fb85cd4-efac-460c-8f5b-5ff376849212: MerkType # MerkType
+    5a719897-5c6d-4d05-a162-4aca707d07c9: PrijsFilter # PrijsFilter
     6beb16d9-e71f-4fb5-826a-c52b6a7a8857: ProductenTitle # ProductenTitle
     6dabdd55-7158-4ea2-928a-dc474961536f: blockImage # blockImage
     7cb8b0db-c230-471d-bd63-642a532fc6de: ContactImg # ContactImg
@@ -62,10 +64,14 @@ meta:
     9a77c145-c53b-44a4-bdb2-2dc307052d32: blackLogo # blackLogo
     9ac71a7d-eac6-4b5a-bb77-2f40d6e5ae95: homepageDescription # homepageDescription
     9f0a7f3f-bace-4561-8976-d096dfd5f841: ProductsBlock # ProductsBlock
+    11f596f5-4192-4383-88b2-02f847936611: Prijscategorieën # Prijscategorieën
+    17a5ec90-55dd-4fbc-ab4f-191c1a9387d8: filterlabel # filterlabel
     32ec3ad3-e3ec-488b-9670-185dcae1a236: Header # Header
     48f60c35-6b15-498e-85e5-ea8d92527c3c: Homepage # Homepage
     49dd7690-de8b-4c4c-acf6-ea0bed781c88: contactMail # contactMail
+    54c53414-b415-4b62-9c17-34d8ee322c23: maxPrijs # maxPrijs
     57c5864f-39e3-4d02-b5da-84682a68b4ff: ProductenMatrix # ProductenMatrix
+    59b2dce8-c39b-43ac-9d28-dcd203ac40b7: Prijscategorie # Prijscategorie
     78e6d6aa-2364-4bf6-9bf8-b2e4fbe22ea1: blockImage # blockImage
     87afe98a-c5a0-4ac8-a3b6-6bd2c48da0c5: 'Homepage Entry' # Homepage Entry
     259b293c-e5d6-482f-98e8-158a8a0f6b88: ProductenPage # ProductenPage
@@ -111,8 +117,11 @@ meta:
     e55d4be9-a010-4072-b605-170ec7dcc2f0: infoTitle # infoTitle
     e513a234-130a-4816-ba95-b085d9a5086d: positionImage # positionImage
     eaa75001-0e4d-4b1a-815c-a7b10cd383a0: 'Custom Pages' # Custom Pages
+    eb347641-4951-4285-9907-8703b318a51a: MerkLabel # MerkLabel
     ec962417-3322-4da5-a5ad-df1967228a86: BlackLogo # BlackLogo
+    ed377351-3b4f-43e1-b410-731e3cf5f553: Filters # Filters
     ee419d88-11a8-4bdd-ad75-63badd6cf7c0: Price # Price
+    efe5d865-7c61-4ff8-9102-6aebeed0423d: minPrijs # minPrijs
     f35a1087-1bdc-4c52-beb4-47b65b821e6c: New # New
     f4754e19-e308-44d8-97ed-912301c9df61: Merken # Merken
     f8145be8-29f8-43ae-b178-99d5f61d0b6c: Footer # Footer
@@ -139,7 +148,7 @@ plugins:
     licenseKey: EEL1ZIP396LGY5THG0678PJO
     schemaVersion: 2.4.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: kserenity-skincare
   schemaVersion: 5.0.0.20

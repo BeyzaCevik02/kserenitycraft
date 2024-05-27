@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 5a719897-5c6d-4d05-a162-4aca707d07c9 # PrijsFilter
+handle: filters
+maxAuthors: 1
+name: Filters
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  30863589-1efd-4876-8616-a9940a064ced: # kserenity-skincare
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

@@ -16,12 +16,7 @@
 
 		{# products #}
 		{% set productenPage = craft.entries.section('products').type('productenpage').one() %}
-		{% set query = craft.entries()
-            .section('products')
-            .type('productentry')
-            .orderBy('postDate desc') %}
-		{% paginate query.limit(6) as pageInfo, products %}
-
+		
 		{# contact #}
 		{% set contact = craft.entries.section('contact').one() %}
 
